@@ -64,10 +64,19 @@ body {
 	margin-top: 35px; 
 }
 
-.blurredImage {
-	height: 500px;
-	width: 100%;
-	background-color: pink;
+.parallax {
+    /* The image used */
+    background-image: url("../Images/BoltChasis.jpeg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #blurb {

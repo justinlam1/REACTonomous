@@ -52,7 +52,7 @@ class Sponsors extends Component {
          <img id="velo" src={Velo} alt="Velodyne liDAR"></img>
        </div>
        <div class="spacer2"></div>
-       <div class="blurredImage"></div>
+       <div class="parallax"></div>
        <div class="spacer"></div>
       </div>
 
