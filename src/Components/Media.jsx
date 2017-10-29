@@ -7,15 +7,14 @@ import '../Css/styles.css';
 import CarouselImage from './CarouselImage.jsx';
 
 import MediaBody1 from './MediaBody1.jsx';
+import MediaBody2 from './MediaBody2.jsx';
+
 import WatoCarArrived from '../Images/WatoCarArrived.jpg';
 
 
 
 class Media extends Component {
 
-  handleGalleryClick(i) {
-    console.log(i, "kasjhgdasj\n");
-  }
 
 
   render() {
@@ -31,9 +30,8 @@ class Media extends Component {
         <CarouselImage
           image = {WatoCarArrived}
          />
-        <MediaBody1
-          onClick = {i => this.handleGalleryClick(i)}
-        />
+        <MediaBody1 />
+        <MediaBody2 />
       </div>
 
     );

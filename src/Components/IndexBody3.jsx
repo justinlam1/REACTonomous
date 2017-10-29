@@ -48,7 +48,7 @@ class IndexBody3 extends Component {
           {/* <img style = {{height:"200px", marginTop: "-50px"}} src = {WatoLogo}/> */}
 
           <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%", textAlign:"center"}}>
-            <Col xs={6} md={4}>
+            <Col sm={6} md={4}>
               <img style = {{height:"200px", marginTop: "-50px"}} src = {Detection}/>
 
               <h2 style = {{textAlign:"center"}}>Object Detection</h2>
@@ -56,14 +56,14 @@ class IndexBody3 extends Component {
 
             </Col>
 
-            <Col xs={6} md={4}>
+            <Col sm={6} md={4}>
               <img style = {{height:"200px", marginTop: "-50px"}} src = {LaneChange}/>
 
               <h2 style = {{textAlign:"center"}}>Multi-Lane Changing</h2>
               <div className = "spacerSmall" />
 
             </Col>
-            <Col xs={4}>
+            <Col sm={6} md={4}>
               <img style = {{height:"200px", marginTop: "-50px"}} src = {DynamicImage}/>
               <h2 style = {{textAlign:"center"}} >Dynamic Collision Avoidance</h2>
               <div className = "spacerSmall" />
