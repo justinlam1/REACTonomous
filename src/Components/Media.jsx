@@ -13,6 +13,10 @@ import WatoCarArrived from '../Images/WatoCarArrived.jpg';
 
 class Media extends Component {
 
+  handleGalleryClick(i) {
+    console.log(i, "kasjhgdasj\n");
+  }
+
 
   render() {
 
@@ -27,7 +31,9 @@ class Media extends Component {
         <CarouselImage
           image = {WatoCarArrived}
          />
-        <MediaBody1 />
+        <MediaBody1
+          onClick = {i => this.handleGalleryClick(i)}
+        />
       </div>
 
     );
