@@ -7,6 +7,12 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
+import Wato1 from '../Images/WatoCarArrived.jpg';
+import Wato2 from '../Images/WatoGroupSocial.jpg';
+import Wato3 from '../Images/WatoGroupSocial.jpg';
+
+
+
 
 function NextArrow(props) {
   const {className, style, onClick} = props
@@ -37,8 +43,9 @@ function SliderScroll(props) {
     width: "100%",
   }
   const divStyle = {
+    padding: "10px",
     textAlign:"center",
-    backgroundColor: "#333"
+    // backgroundColor: "#333"
   }
   // const
 
@@ -51,9 +58,9 @@ function SliderScroll(props) {
         {/* <slideImage
           onClick = {}
         /> */}
-        <div onClick = {() => props.onClick(0)} style = {divStyle}><img src = {WatoLogo} style = {imgStyle}></img></div>
-        <div onClick = {() => props.onClick(1)} style = {divStyle}><img src = {WatoLogo} style = {imgStyle}></img></div>
-        <div onClick = {() => props.onClick(2)} style = {divStyle}><img src = {WatoLogo} style = {imgStyle}></img></div>
+        <div onClick = {() => props.onClick(0)} style = {divStyle}><img src = {Wato1} style = {imgStyle}></img></div>
+        <div onClick = {() => props.onClick(1)} style = {divStyle}><img src = {Wato2} style = {imgStyle}></img></div>
+        <div onClick = {() => props.onClick(2)} style = {divStyle}><img src = {Wato3} style = {imgStyle}></img></div>
         <div onClick = {() => props.onClick(3)} style = {divStyle}><img src = {WatoLogo} style = {imgStyle}></img></div>
         <div onClick = {() => props.onClick(4)} style = {divStyle}><img src = {WatoLogo} style = {imgStyle}></img></div>
         <div onClick = {() => props.onClick(5)} style = {divStyle}><img src = {WatoLogo} style = {imgStyle}></img></div>
@@ -87,7 +94,8 @@ class MediaBody1 extends Component {
      speed: 500,
      slidesToScroll: 2,
       nextArrow: <NextArrow />,
-      prevArrow: <PrevArrow />
+      prevArrow: <PrevArrow />,
+      useCss: true,
       // centerMode: true,
       // slidesToScroll: 1
     }
