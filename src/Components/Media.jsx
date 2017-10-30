@@ -7,11 +7,14 @@ import '../Css/styles.css';
 import CarouselImage from './CarouselImage.jsx';
 
 import MediaBody1 from './MediaBody1.jsx';
+import MediaBody2 from './MediaBody2.jsx';
+
 import WatoCarArrived from '../Images/WatoCarArrived.jpg';
 
 
 
 class Media extends Component {
+
 
 
   render() {
@@ -28,6 +31,7 @@ class Media extends Component {
           image = {WatoCarArrived}
          />
         <MediaBody1 />
+        <MediaBody2 />
       </div>
 
     );

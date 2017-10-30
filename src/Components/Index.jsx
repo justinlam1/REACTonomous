@@ -6,6 +6,8 @@ import logo from '../Images/logo.svg';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+
 import CarouselStyled from './CarouselStyled.jsx';
 // import { Parallax } from 'react-scroll-parallax';
 
@@ -78,6 +80,7 @@ class Index extends Component {
               </div>
             </Parallax>
           </div>
+          <Footer />
 
         </ParallaxProvider>
       </div>
