@@ -69,14 +69,49 @@ body {
     background-image: url("../Images/BoltChasis.jpeg");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 640px; 
     width: 100%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+}
+
+.tablecity {
+	color: #f2f2f2;
+	background-color: #222; 
+	margin: auto; 
+	font-size: 20px;
+
+	position: relative;
+	top: 0;
+	transform: translateY(+5%);
+
+	text-align: center; 
+	opacity: 0.97; 
+}
+
+.tablecity .benefits {
+	text-align: left;
+}
+
+.tablecity td {
+	border: 1px black solid; 
+	height: 62px;
+	width: 170px;
+}
+
+.tablecity th {
+	border: 1px black solid; 
+	text-align: center;
+	padding: 10px; 
+} 
+
+.tablecity img {
+	width: 65px;
+	height: 48px;
 }
 
 #blurb {
@@ -90,4 +125,15 @@ body {
 	height: 35px;
 	width: 100%; 
 	/*background-color: #ABC333; */
+}
+
+.footer {
+	height: 60px;
+	width: 100%;
+	background-color: #222; 
+}
+
+.benefits {
+	width: 400px;
+	padding: 0px 10px 0px 10px; 
 }

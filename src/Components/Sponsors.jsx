@@ -16,6 +16,7 @@ import TASS from '../Images/Tasslogo.png';
 import CON from '../Images/Continental.png'; 
 import Intel from '../Images/Intellogo.png'; 
 import Velo from '../Images/Velodyne.png'; 
+import Check from '../Images/checkmark.png';
 
 class Sponsors extends Component {
 
@@ -52,8 +53,74 @@ class Sponsors extends Component {
          <img id="velo" src={Velo} alt="Velodyne liDAR"></img>
        </div>
        <div class="spacer2"></div>
-       <div class="parallax"></div>
-       <div class="spacer"></div>
+       <div class="parallax">
+           <table class="tablecity">
+              <tr>
+                <th class="benefits">Sponsorship Benefits</th>
+                <th>Bronze $1000</th>
+                <th>Silver $3000</th>
+                <th>Gold $5000</th>
+                <th>Platinum $10000</th>
+              </tr>
+              <tr>
+                <td class="benefits">Company Logo: Promotional print on material and yearly banner</td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td>
+              </tr>
+              <tr>
+                <td class="benefits">Signed Team Picture</td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td>
+                <td></td>
+                <td></td> 
+              </tr>
+              <tr>
+                <td class="benefits">Tour of WATonomous</td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td> 
+              </tr>
+              <tr>
+                <td class="benefits">Vehicle Company Visit</td>
+                <td></td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td> 
+              </tr>
+              <tr>
+                <td class="benefits">Signed Team Photo on Plaque</td>
+                <td></td>
+                <td></td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td>
+              </tr>
+              <tr>
+                <td class="benefits">Vehicle at Annual Company Event</td>
+                <td></td>
+                <td></td>
+                <td><img src={Check}></img></td>
+                <td><img src={Check}></img></td> 
+              </tr>
+              <tr>
+                <td class="benefits">Cross Promotional Video to be posted on Social Media and Website</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><img src={Check}></img></td>
+              </tr>
+              <tr>
+                <td class="benefits">Company logo on vehicle</td>
+                <td>Standard</td>
+                <td>Standard</td>
+                <td>Medium</td>  
+                <td>Large</td> 
+              </tr>
+            </table>
+       </div>
+       <div class="footer"></div>
       </div>
 
 
