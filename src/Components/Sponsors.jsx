@@ -3,6 +3,7 @@ import {Component } from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 
 import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 import '../Css/sponsors.css';
 import CarouselImage from './CarouselImage.jsx';
 import SponsorBody1 from './SponsorBody1.jsx';
@@ -120,7 +121,7 @@ class Sponsors extends Component {
               </tr>
             </table>
        </div>
-       <div class="footer"></div>
+       <Footer />
       </div>
 
 

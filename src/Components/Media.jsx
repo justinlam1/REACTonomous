@@ -3,6 +3,7 @@ import {Component } from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 
 import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 import '../Css/styles.css';
 import CarouselImage from './CarouselImage.jsx';
 
@@ -32,6 +33,7 @@ class Media extends Component {
          />
         <MediaBody1 />
         <MediaBody2 />
+       <Footer/>
       </div>
 
     );

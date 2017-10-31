@@ -63,7 +63,7 @@ class Index extends Component {
           </div>
           <IndexBody2 />
           <IndexBody3 />
-          <div style = {{height: "500px"}}>
+          <div style = {{height: "490px"}}>
             <Parallax bgImage={WatoSocialMedia} strength={400} >
               <div style = {{height: "50px"}}> </div>
               <div style = {{ width: "100%", textAlign: "center"}}>

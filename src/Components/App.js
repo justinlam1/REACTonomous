@@ -7,6 +7,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 import Header from './Header.jsx';
+import Footer from './Footer.jsx'
 import CarouselStyled from './CarouselStyled.jsx';
 import Index from './Index.jsx';
 import Ressources from './Ressources.jsx'
@@ -29,6 +30,7 @@ class App extends Component {
 
           <Index />
 
+          <Footer />
 
         </ParallaxProvider>
       </div>

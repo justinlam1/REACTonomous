@@ -1,0 +1,71 @@
+@font-face { font-family: RalewayReg; src: url('../Raleway/Raleway-Regular.ttf'); }
+@font-face { font-family: RalewayLig; src: url('../Raleway/Raleway-Light.ttf'); }
+
+@font-face { font-family: RalewayBld; src: url('../Raleway/Raleway-Bold.ttf'); }
+@font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
+
+.footer {
+	background-color: #222;
+	text-align: center;
+	padding: 0px 40px 10px 40px;
+}
+
+.footer img {
+	width: 80px;
+}
+
+.page-navigation {
+	font-size: 12px;
+}
+
+.footer ul {
+	padding: 0px;
+}
+
+.page-navigation ul {
+	vertical-align: middle;
+}
+
+.page-navigation SocialIcon {
+	display: inline-block;
+	margin: 10px;
+	width: 25px;
+	height: 25px;
+}
+
+.page-navigation .link {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.page-navigation li:hover {
+	color: black;
+}
+
+
+.page-navigation .link:hover {
+	color: black;
+}
+
+.button {
+	padding: 0px 15px 0px 10px;
+  color:#FFF;
+	/*background-color: #FFF;*/
+}
+.button:active {
+  text-decoration: none;
+  color:#FFF;
+}
+.button:hover {
+  text-decoration: none;
+  color:#FFF;
+}
+.button:link {
+  text-decoration: none;
+  color:#FFF;
+}
+.button:visited {
+  text-decoration: none;
+  color:#FFF;
+}
