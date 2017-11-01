@@ -2,6 +2,7 @@ import React, {Component}  from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
 import logo from '../Images/logo.svg';
+import { SocialIcon } from 'react-social-icons';
 
 
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -71,9 +72,9 @@ class Index extends Component {
                 </h1>
                 <h2 style = {{color:"#FFF", textAlign:"center", fontSize: "18px"}}>Keep up to date on our development progress, incoming recruitment rounds, and our latest sponsorships.
                 </h2>
-                <Button bsStyle="primary" >Facebook</Button>
-                <Button bsStyle="primary" >Twitter</Button>
-                <Button bsStyle="primary" >Instagram</Button>
+                <SocialIcon style={{ height: 75, width: 75, margin: 10 }} url="https://www.facebook.com/WATonomous/" />
+                <SocialIcon style={{ height: 75, width: 75, margin: 10 }} url="https://www.instagram.com/watonomous/" />
+                <SocialIcon style={{ height: 75, width: 75, margin: 10 }} url="https://twitter.com/watonomous?lang=en" />
 
 
                 <div style = {{height: "300px"}}> </div>
