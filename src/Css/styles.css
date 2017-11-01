@@ -131,15 +131,16 @@ p2 {
 }
 .carouselHeading {
   padding-top: 20px;
-  line-height: 40px;
+  line-height: 50px;
 
-  font-family: RalewayReg, sans-serif;
+  font-family: RalewayBld, sans-serif;
 
   font-size: 67px;
 
   color: #FFF;
 }
 .carouselParagraph {
+  text-align: center;
   line-height: 45px;
   font-family: RalewayReg, sans-serif;
   font-size: 50px;

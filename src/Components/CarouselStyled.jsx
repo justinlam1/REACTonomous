@@ -63,9 +63,10 @@ class CarouselStyled extends Component {
 
 
           <div className = "center" style = {{paddingTop: "0px"}}>
-            <h1 className = "carouselHeading">WATERLOO</h1>
-            <p className = "carouselParagraph">AUTONOMOUS</p>
-            <p className = "carouselParagraph2">VEHICLE DESIGN TEAM</p>
+            <h1 className = "carouselHeading" style = {{textAlign:
+            "center"}}>YOUR CAR IN 20 YEARS:</h1>
+            <p className = "carouselParagraph">WATONOMOUS</p>
+            <p className = "carouselParagraph2">The University Of Waterloo's Autonomous Car Team</p>
           </div>
           <div style={{
             width: '100%',
