@@ -26,6 +26,8 @@ import BoltChasis from '../Images/BoltChasis.jpeg';
 import WatoSocialMedia from '../Images/WatoGroupSocial.jpg';
 import WatoSocialCar from '../Images/WatoGroupWithCar.jpg';
 
+import {ShareButtons,ShareCounts,generateShareIcon} from 'react-share';
+
 
 
 
@@ -33,6 +35,27 @@ import WatoSocialCar from '../Images/WatoGroupWithCar.jpg';
 class Index extends Component {
 
   render() {
+    const FacebookIcon = generateShareIcon('facebook');
+    const TwitterIcon = generateShareIcon('twitter');
+
+    const {
+      FacebookShareButton,
+      GooglePlusShareButton,
+      LinkedinShareButton,
+      TwitterShareButton,
+      TelegramShareButton,
+      WhatsappShareButton,
+      PinterestShareButton,
+      VKShareButton,
+      OKShareButton,
+      RedditShareButton,
+      EmailShareButton,
+    } = ShareButtons;
+
+    const iconStyle = {
+  height: '55px', width: '55px', margin: '10px', backgroundColor: '#FFF', borderRadius: "76px",
+
+    }
 
     return (
       <div>
@@ -64,20 +87,24 @@ class Index extends Component {
           </div>
           <IndexBody2 />
           <IndexBody3 />
-          <div style = {{height: "490px"}}>
+          <div style = {{height: "530px"}}>
+
             <Parallax bgImage={WatoSocialMedia} strength={400} >
               <div style = {{height: "50px"}}> </div>
-              <div style = {{ width: "100%", textAlign: "center"}}>
+              <div style = {{ width: "100%", textAlign: "center", height: "480px"}}>
                 <h1 className = "heading" style = {{color:"#FFF"}}>Follow Us On Social Media
                 </h1>
                 <h2 style = {{color:"#FFF", textAlign:"center", fontSize: "18px"}}>Keep up to date on our development progress, incoming recruitment rounds, and our latest sponsorships.
                 </h2>
-                <SocialIcon style={{ height: 75, width: 75, margin: 10 }} url="https://www.facebook.com/WATonomous/" />
-                <SocialIcon style={{ height: 75, width: 75, margin: 10 }} url="https://www.instagram.com/watonomous/" />
-                <SocialIcon style={{ height: 75, width: 75, margin: 10 }} url="https://twitter.com/watonomous?lang=en" />
 
 
-                <div style = {{height: "300px"}}> </div>
+                <SocialIcon style={iconStyle} url="https://www.facebook.com/WATonomous/" />
+                <SocialIcon style={iconStyle} url="https://www.instagram.com/watonomous/" />
+                <SocialIcon style={iconStyle} url="https://twitter.com/watonomous?lang=en" />
+                <SocialIcon style = {iconStyle} url = "https://www.linkedin.com/company/11167023/" />
+
+
+                {/* <div style = {{height: "300px"}}> </div> */}
               </div>
             </Parallax>
           </div>
