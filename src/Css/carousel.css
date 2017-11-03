@@ -1,0 +1,29 @@
+.carouselHeading {
+  /*padding-top: 20px;*/
+  line-height: 70px;
+
+  font-family: RalewayBld, sans-serif;
+
+  font-size: 67px;
+  margin-top: -20px;
+  color: #FFF;
+}
+
+.inShadow {
+  box-shadow: inset -200px 150px 10000px rgba(0,0,0,0.75);
+  width: 120vw;
+
+}
+
+.centerTop {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 20vh;
+  left: 0;
+  width: 80vw;
+  height: 200px;
+  background: rgba(220, 220, 220, .0);
+  border-radius: 3px;
+}
