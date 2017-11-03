@@ -124,14 +124,14 @@ p2 {
   right: 0;
   bottom: 0;
   left: 0;
-  width: 450px;
+  width: 600px;
   height: 200px;
   background: rgba(220, 220, 220, .0);
   border-radius: 3px;
 }
 .carouselHeading {
-  padding-top: 20px;
-  line-height: 50px;
+  /*padding-top: 20px;*/
+  line-height: 70px;
 
   font-family: RalewayBld, sans-serif;
 
@@ -149,6 +149,8 @@ p2 {
 }
 
 .carouselParagraph2 {
+  text-align: center;
+
   /*line-height: 40px;*/
   line-height: 20px;
   letter-spacing: 1.6px;
