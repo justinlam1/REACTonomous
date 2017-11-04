@@ -28,6 +28,8 @@ import WatoSocialMedia from '../Images/WatoGroupSocial.jpg';
 import WatoSocialCar from '../Images/WatoGroupWithCar.jpg';
 
 import {ShareButtons,ShareCounts,generateShareIcon} from 'react-share';
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 
 
 
@@ -67,6 +69,9 @@ class Index extends Component {
             home = {1}
           />
           <CarouselStyled />
+          <ScrollableAnchor id={'welcome'}>
+            <div>hi</div>
+          </ScrollableAnchor>
 
           <IndexBody1/>
           <div className = "spacerBig">

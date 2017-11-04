@@ -6,11 +6,14 @@ import ParallaxComponent from 'react-parallax-component';
 import testVideo from '../Images/testVideo.mp4';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 
+import { Link } from 'react-router-dom'
 
 
 import ParallaxImg1 from '../Images/CityPoly.jpg';
 import '../Css/styles.css';
 import '../Css/carousel.css';
+import DownArrow from '../Images/down-arrow.svg';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 class CarouselStyled extends Component {
@@ -40,60 +43,79 @@ class CarouselStyled extends Component {
     });
   }
 
+
+
   render() {
+
+    const buttonStyle = {
+      background:'rgba(0,0,0,0.7)',
+      textAlign:'center',
+      color:'#EEE',
+      margin: '20px',
+      fontSize: '20px',
+      width: "200px",
+      height: "50px",
+      borderRadius:'0px',
+      opacity: '1',
+      border: '1px',
+      zIndex: '2000',
+    }
+    const arrowStyle = {
+      backgroundSize: 'contain',
+      backgroundImage: `url(${DownArrow})`,
+      opacity: '0.7',
+    }
+
     return(
       // <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} >
       //   <Carousel.Item >
-          <div >
-
-            {/* <ParallaxComponent
-              speed="0.003"
-              width="300"
-              top="40%"
-              left="100"
-              >
-              <div>
-              <div className = "Carousel" alt="900x500" />
-            </div>
-          </ParallaxComponent> */}
-
-          <div className = "centerTop" style = {{paddingTop: "0px"}}>
-            <h1 className = "carouselHeading" style = {{textAlign:
-            "center"}}>ENGINEERING THE FUTURE OF TRANSPORTATION</h1>
-            {/* <h1 className = "carou">OF TRANSPORTATION</h1> */}
-            <p className = "carouselParagraph2">Waterloo's Autonomous Car Team</p>
-            <div style = {{textAlign:'center'}}>
-              <Button bsStyle="primary" style = {{margin: '20px', fontSize: '20px'}}>Sponsors</Button>
-              <Button bsStyle="primary"  style = {{margin: '20px', fontSize: '20px'}} >Our Team</Button>
-            </div>
+      <div >
 
 
 
-          </div>
-          <div style={{
-            width: '100%',
+        <div style={{
+          width: '100%',
+          height: '100vh',
+          overflow: 'hidden',
+        }} >
+
+
+        <div className = "inShadow" >
+          <video autoPlay muted   loop style={{
+            objectFit: 'cover',
+            width: '100vw',
             height: '100vh',
-            overflow: 'hidden',
-          }} >
+          }} src= "https://www.dl.dropboxusercontent.com/s/lh2i4rvcerwxq7h/Wato_Intro3.mov?dl=0"
+        />
+      </div>
 
-
-          <div className = "inShadow" style = {{zIndex: '1000'}}>
-            <video autoPlay muted   loop style={{
-              objectFit: 'cover',
-              width: '100%',
-              height: '100%',
-            }} src= "https://www.dl.dropboxusercontent.com/s/lh2i4rvcerwxq7h/Wato_Intro3.mov?dl=0"
-          />
+      <div className = "centerTop" style = {{paddingTop: "0px"}}>
+        <h1 className = "carouselHeading" style = {{textAlign:
+          "center"}}>ENGINEERING THE FUTURE OF TRANSPORTATION</h1>
+          {/* <h1 className = "carou">OF TRANSPORTATION</h1> */}
+          <p className = "carouselParagraph2">Waterloo's Autonomous Car Team</p>
+          <div style = {{textAlign:'center', paddingTop: '50px'}}>
+            <Link to = {'/sponsors'}   className = "button" ><Button className = "buttonDark" >SPONSORS</Button> </Link>
+            <Link to = {'/media'}   className = "button" ><Button className = "buttonDark" >OUR TEAM</Button> </Link>
           </div>
+          <div className = "downArrow" style = {arrowStyle}><a href='#welcome'>Hello world</a></div>
+
+        </div>
+
+
+
+      </div>
+      {/* <div className = "downArrow2" >
+
+        </div> */}
+
 
       </div>
 
-    </div>
+      // </Carousel>
 
-// </Carousel>
-
-);
-}
+    );
+  }
 
 }
 export default CarouselStyled;

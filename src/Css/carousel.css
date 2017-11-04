@@ -11,19 +11,83 @@
 
 .inShadow {
   box-shadow: inset -200px 150px 10000px rgba(0,0,0,0.75);
-  width: 120vw;
+  width: 100vw;
 
 }
 
 .centerTop {
   position: absolute;
   margin: auto;
-  top: 0;
+  top: 20vh;
   right: 0;
-  bottom: 20vh;
+  /*bottom: 0;*/
   left: 0;
   width: 80vw;
   height: 200px;
   background: rgba(220, 220, 220, .0);
   border-radius: 3px;
+}
+
+.centerTop2 {
+  position: absolute;
+  margin: auto;
+  top: 15vh;
+  right: 0;
+  /*bottom: 0;*/
+  left: 0;
+  width: 80vw;
+  height: 200px;
+  background: rgba(220, 220, 220, .0);
+  border-radius: 3px;
+}
+
+.buttonDark {
+  background:rgba(0,0,0,0.7);
+  border: 2px;
+  border-color: #FFF;
+  text-align: center;
+  color: #EEE;
+  margin: 20px;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 0px;
+  opacity: 1;
+  /*padding-top: 100px;*/
+  /*zIndex: 2000;*/
+
+
+}
+
+.buttonDark:hover {
+  color: #EEE;
+  border: 0.5px solid white;
+  background:rgba(0,0,0,0.7);
+
+
+}
+.buttonDark2 {
+  background:rgba(0,0,0,0.7);
+}
+.downArrow {
+  position: absolute;
+  margin: auto;
+  top: 120vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.downArrow2 {
+  text-align: center;
+  /*position: absolute;
+  margin: auto;*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
 }
