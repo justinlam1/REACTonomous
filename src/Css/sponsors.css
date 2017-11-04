@@ -84,11 +84,12 @@ body {
 	color: #f2f2f2;
 	background-color: #222; 
 	margin: auto; 
-	font-size: 20px;
+	font-size: 16px;
+	width: 82%; 
 
 	position: relative;
 	top: 0;
-	transform: translateY(+5%);
+	transform: translateY(+7%);
 
 	text-align: center; 
 	opacity: 0.97; 
@@ -100,7 +101,7 @@ body {
 
 .tablecity td {
 	border: 1px black solid; 
-	height: 62px;
+	height: 50px;
 	width: 170px;
 }
 
@@ -108,11 +109,12 @@ body {
 	border: 1px black solid; 
 	text-align: center;
 	padding: 10px; 
+	font-size: 20px; 
 } 
 
 .tablecity img {
-	width: 65px;
-	height: 48px;
+	width: 50px;
+	height: 40px;
 }
 
 #blurb {
@@ -129,6 +131,7 @@ body {
 }
 
 .benefits {
-	width: 400px;
+	width: 43%;
 	padding: 0px 10px 0px 10px; 
+	font-size: 16px;
 }
