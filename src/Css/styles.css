@@ -229,3 +229,12 @@ textarea.contact-form-input {
 .formcontrol-feedback {
   margin-top: 10px;
 }
+
+.contact-form-bottom {
+  padding-bottom: 30px;
+}
+
+.map-column {
+  padding-right: 0px;
+  padding-left: 0px;
+}

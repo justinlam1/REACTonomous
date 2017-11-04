@@ -9,6 +9,7 @@
     "react-bootstrap": "^0.31.3",
     "react-carousel": "^4.2.2",
     "react-dom": "^16.0.0",
+    "react-google-maps": "^9.2.2",
     "react-image-lightbox": "^4.3.0",
     "react-keydown": "^1.9.4",
     "react-lightbox-component": "^0.2.0",

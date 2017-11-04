@@ -4,6 +4,8 @@ import {Grid, Row, Col, Button, FormGroup, PageHeader, Form, FormControl,
   ControlLabel } from 'react-bootstrap'; 
 
 import Header from './Header.jsx'
+import Footer from './Footer.jsx'
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 import '../Css/styles.css';
 
 
@@ -78,6 +80,15 @@ class Contact extends Component {
 
   render() {
 
+    const MyMapComponent = withScriptjs(withGoogleMap((props) =>
+    <GoogleMap
+      defaultZoom={8}
+      defaultCenter={{ lat: 43.472979, lng: -80.540103}}
+    >
+      {props.isMarkerShown && <Marker position={{ lat: 43.472979, lng: -80.540103 }} />}
+    </GoogleMap>
+  ))
+
     return(
       // Pretty sure there exists React Contact form npm packages we can use
       <div>
@@ -133,7 +144,7 @@ class Contact extends Component {
             <Row>
                 <PageHeader>Our Office</PageHeader>
             </Row>
-            <Row>
+            <Row className="contact-form-bottom">
               <Col xs={12} sm={4} smPush={8} md={3} mdPush={9}>
                 University of Waterloo
                 <br/>
@@ -148,13 +159,20 @@ class Contact extends Component {
                 <br/>
               </Col>
               <Col xs={12} sm={8} smPull={4} md={9} mdPull={3}
-              style={{height: 300 + "px", border: "1px solid black"}}>
-                Iframe goes here
+              style={{height: 400 + "px", border: "1px solid black"}} className = "map-column">
+              <MyMapComponent
+              isMarkerShown
+              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+              loadingElement={<div style={{ height: `100%`, width: `100%` }} />}
+              containerElement={<div style={{ height: `100%`, width: `100%` }} />}
+              mapElement={<div style={{ height: `100%`, width: `100%` }} />}
+              />
               </Col>
             </Row>
           </Col>
 
         </Grid>
+        <Footer/>
       </div>
     );
 
