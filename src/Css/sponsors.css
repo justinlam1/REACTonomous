@@ -4,7 +4,7 @@ body {
 
 .sponsors {
 	text-align: center; 
-	width: 85%;
+	width: 90%;
 	margin: auto; 
 	padding-bottom: 50px; 
 }
@@ -36,13 +36,13 @@ body {
 }
 
 #intel {
-	width: 150px;
-	height: 120px; 
+	width: 160px;
+	height: 110px; 
 }
 
 #velo {
 	width: 360px;
-	height: 100px; 
+	height: 80px; 
 }
 
 .title {
