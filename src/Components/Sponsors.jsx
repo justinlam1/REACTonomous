@@ -18,6 +18,7 @@ import CON from '../Images/Continental.png';
 import Intel from '../Images/Intellogo.png'; 
 import Velo from '../Images/Velodyne.png'; 
 import Check from '../Images/checkmark.png';
+import Bike from '../Images/WatoMedia5.jpg'; 
 
 class Sponsors extends Component {
 
