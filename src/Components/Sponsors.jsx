@@ -35,7 +35,6 @@ class Sponsors extends Component {
             <CarouselImage 
             image = {WATOimage}
         />
-        <div class="spacer"></div>
         <h1 class="title">Our Sponsors</h1>
         <div class="containBlurb">
           <p id="blurb">As WATonomous grows, it requires a significant investment into software and
@@ -53,7 +52,6 @@ class Sponsors extends Component {
          <img id="intel" src={Intel} alt="Intel"></img>
          <img id="velo" src={Velo} alt="Velodyne liDAR"></img>
        </div>
-       <div class="spacer2"></div>
        <div class="parallax">
            <table class="tablecity">
               <tr>
