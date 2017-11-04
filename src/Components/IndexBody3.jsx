@@ -12,6 +12,7 @@ import GeneralM from '../Images/GMlogo.jpg'
 import DynamicImage from '../Images/dynamicCar.jpg';
 import LaneChange from '../Images/laneChange.jpg';
 import Detection from '../Images/detectionLidar.png';
+import LaneSwap from '../Images/laneswapper.png';
 
 
 class IndexBody3 extends Component {
@@ -57,7 +58,7 @@ class IndexBody3 extends Component {
             </Col>
 
             <Col sm={6} md={4}>
-              <img style = {{height:"200px", marginTop: "-50px"}} src = {LaneChange}/>
+              <img style = {{height:"200px", marginTop: "-50px"}} src = {LaneSwap}/>
 
               <h2 style = {{textAlign:"center"}}>Multi-Lane Changing</h2>
               <div className = "spacerSmall" />
