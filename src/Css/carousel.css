@@ -8,6 +8,18 @@
   /*margin-top: -20px;*/
   color: #FFF;
 }
+@media screen and (max-width: 480px) {
+  .carouselHeading {
+    /*padding-top: 20px;*/
+    line-height: 70px;
+
+    font-family: RalewayBld, sans-serif;
+
+    font-size: 35px;
+    /*margin-top: -20px;*/
+    color: #FFF;
+  }
+}
 
 .inShadow {
   position: absolute;

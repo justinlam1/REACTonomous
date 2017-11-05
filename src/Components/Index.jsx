@@ -63,7 +63,7 @@ class Index extends Component {
     }
 
     return (
-      <div className = "indexclass" style = {{width: '100vw'}}>
+      <div className = "indexclass" style = {{maxWidth: '100vw',   overflowX:'hidden',}}>
         <ParallaxProvider  >
 
 
@@ -76,7 +76,7 @@ class Index extends Component {
             <div> </div>
           </ScrollableAnchor>
 
-          <IndexBody1/>
+          <IndexBody1 style = {{width: '100%'}} />
           <div className = "spacerBig">
 
           </div>
@@ -89,7 +89,7 @@ class Index extends Component {
               <div style = {{ width: "100%", textAlign: "center"}}>
                 <h1 className = "heading" style = {{color:"#FFF"}}>Electric Self Driving Vehicle
                 </h1>
-                <h2 style = {{color:"#FFF", textAlign:"center", fontSize: "18px"}}>Sponsor one of the leading autonomous vehicle teams in Canada
+                <h2 className = "parallaxSubTitle">Sponsor one of the leading autonomous vehicle teams in Canada
                 </h2>
                 <Button bsStyle="primary" >Sponsors</Button>
                 <div style = {{height: "400px"}}> </div>
@@ -111,7 +111,7 @@ class Index extends Component {
               <div style = {{ width: "100%", textAlign: "center", height: "480px"}}>
                 <h1 className = "heading" style = {{color:"#FFF"}}>Follow Us On Social Media
                 </h1>
-                <h2 style = {{color:"#FFF", textAlign:"center", fontSize: "18px"}}>Keep up to date on our development progress, incoming recruitment rounds, and our latest sponsorships.
+                <h2 className = "parallaxSubTitle">Keep up to date on our development progress, incoming recruitment rounds, and our latest sponsorships.
                 </h2>
 
 

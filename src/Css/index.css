@@ -11,3 +11,11 @@
   height: 100px;
   background-color: #FFF;
 }
+
+.parallaxSubTitle {
+  color:#FFF;
+   text-align:center;
+   font-size: 18px;
+   padding-left: 20px;
+   padding-right: 20px;
+}

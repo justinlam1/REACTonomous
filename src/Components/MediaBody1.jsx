@@ -76,7 +76,7 @@ function NextArrow(props) {
         backgroundSize: "cover",
         padding: "15px",
         textAlign:"center",
-        // width: "200px",
+        // width: "90%",
         // backgroundColor: "#333"
       }
       // const
@@ -85,7 +85,7 @@ function NextArrow(props) {
 
 
       return (
-        <div>
+        <div style = {{maxHeight: '200px', width: '90vw'}}>
           {props.isOpen &&
             <Lightbox
               mainSrc={images[props.photoIndex]}

@@ -55,49 +55,50 @@ class CarouselImage extends Component {
     return(
       // <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} >
       //   <Carousel.Item >
-          <div>
+      <div>
 
-            <div style={{
-              width: '100%',
-              height: '100vh',
-              overflow: 'hidden',
-            }}>
-            <div style = {{
-              backgroundImage: `url(${this.props.image})`,
-              objectFit: 'cover',
-              width: '100vw',
-              height: '100vh',
-              backgroundSize: "100%"
-            }} >
-          </div>
-
-          <div className = "centerTop2" style = {{paddingTop: "0px"}}>
-            <h1 className = "carouselHeading" style = {{textAlign:
-              "left"}}>Sponsors</h1>
-
-              <p className = "carouselParagraph2" style = {{textAlign:'left'}}></p>
-              <div style = {{textAlign:'center', paddingTop: '50px'}}>
-
-              </div>
-            </div>
-
-
-
-          <a href='#welcome'><div className = "downArrow" style = {arrowStyle}>
-          </div></a>
-
-
-
-        </div>
+        <div style={{
+          width: '100%',
+          height: '100vh',
+          overflow: 'hidden',
+        }}>
+        <div style = {{
+          backgroundImage: `url(${this.props.image})`,
+          backgroundPosition: '50%',
+          objectFit: 'cover',
+          width: '100%',
+          height: '100%',
+          backgroundSize: "cover"
+        }} >
       </div>
 
+      <div className = "centerTop2" style = {{paddingTop: "0px"}}>
+        <h1 className = "carouselHeading" style = {{textAlign:
+          "left"}}>Sponsors</h1>
 
-      //
-      //   </Carousel.Item>
-      //
-      // </Carousel>
+          <p className = "carouselParagraph2" style = {{textAlign:'left'}}></p>
+          <div style = {{textAlign:'center', paddingTop: '50px'}}>
 
-);
+          </div>
+        </div>
+
+
+
+        <a href='#welcome'><div className = "downArrow" style = {arrowStyle}>
+        </div></a>
+
+
+
+      </div>
+    </div>
+
+
+    //
+    //   </Carousel.Item>
+    //
+    // </Carousel>
+
+  );
 }
 
 }

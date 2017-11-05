@@ -124,8 +124,8 @@ class CarouselStyled extends Component {
             "center"}}>ENGINEERING THE FUTURE OF TRANSPORTATION</h1>
             <p className = "carouselParagraph2">Waterloo's Autonomous Car Team</p>
             <div style = {{textAlign:'center', paddingTop: '50px'}}>
-              <div style = {{width:"80%", paddingLeft:"20%", }}>
-
+              <div style = {{width:"80%", paddingLeft:"20%" }}>
+                <Row>
                 <Col md={6} mdPush={6} style = {{textAlign:'center'}}>
                   {/* React columns were used to better center the buttons */}
                   <a href='#SAE'  style = {linkStyle} style = {{float:'center'}} ><div className = "buttonDark" >SAE Challenge</div> </a>
@@ -134,6 +134,7 @@ class CarouselStyled extends Component {
                 <Col md={6} mdPull={6}>
                   <a href='#welcome'  style = {linkStyle} style = {{float:'center'}} ><div className = "buttonDark" >WATonomous</div> </a>
                 </Col>
+              </Row>
 
 
 

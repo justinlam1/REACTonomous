@@ -52,7 +52,7 @@ class MediaBody2 extends Component {
 
 
 
-      <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%"}}>
+      <Row className="show-grid" style = {{width:"90%", paddingLeft: "20%"}}>
         <Col sm={6} md={4}>
           <a href = "http://media.gm.ca/media/ca/en/gm/home.detail.html/content/Pages/news/ca/en/2017/Apr/0405_Autonomous.html">
           <div style = {{textAlign:"center"}}>
@@ -84,7 +84,7 @@ class MediaBody2 extends Component {
       </Row>
       <div className = "spacerBig"/>
 
-      <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%"}}>
+      <Row className="show-grid" style = {{width:"90%", paddingLeft: "20%"}}>
         <Col sm={6} md={4}>
           <a href = "http://www.therecord.com/news-story/7243676-uw-will-strut-its-stuff-in-north-american-self-driving-car-competition/">
           <div style = {{textAlign:"center"}}>
@@ -117,7 +117,7 @@ class MediaBody2 extends Component {
       <div className = "spacerBig"/>
 
 
-      <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%"}}>
+      <Row className="show-grid" style = {{width:"90%", paddingLeft: "20%"}}>
         <Col sm={6} md={4}>
           <a href = "https://uwaterloo.ca/daily-bulletin/2017-04-06" >
           <div style = {{textAlign:"center"}}>

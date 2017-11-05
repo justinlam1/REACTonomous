@@ -4,7 +4,10 @@
 @font-face { font-family: RalewayBld; src: url('../Raleway/Raleway-Bold.ttf'); }
 @font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
 @font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
-
+html, body {
+    max-width: 100%;
+    /*overflow: hidden;*/
+}
 
 .header {
   width: 100vw;
@@ -53,8 +56,8 @@
 }
 
 .OverviewSmall {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: center;
   width: 100%;
   /*font-family: 'Roboto', sans-serif;*/
