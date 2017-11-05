@@ -14,6 +14,8 @@ import CarouselStyled from './CarouselStyled.jsx';
 
 import '../Css/styles.css';
 import '../Css/index.css';
+import '../Css/carousel.css';
+
 
 import IndexBody1 from './IndexBody1.jsx';
 import IndexBody2 from './IndexBody2.jsx';
@@ -61,16 +63,17 @@ class Index extends Component {
     }
 
     return (
-      <div>
-        <ParallaxProvider>
+      <div className = "indexclass" style = {{width: '100vw'}}>
+        <ParallaxProvider  >
 
 
           <Header
             home = {1}
           />
-          <CarouselStyled />
+          <CarouselStyled style = {{width: '100%'}} />
+
           <ScrollableAnchor id={'welcome'}>
-            <div>hi</div>
+            <div> </div>
           </ScrollableAnchor>
 
           <IndexBody1/>
@@ -93,6 +96,9 @@ class Index extends Component {
               </div>
             </Parallax>
           </div>
+          <ScrollableAnchor id={'SAE'}>
+            <div> </div>
+          </ScrollableAnchor>
           <IndexBody2 />
           <IndexBody3 />
 

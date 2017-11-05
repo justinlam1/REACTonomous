@@ -10,21 +10,41 @@ import Contact from './Components/Contact.jsx';
 import registerServiceWorker from './registerServiceWorker';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { AnimatedSwitch } from 'react-router-transition';
+import { spring, AnimatedSwitch } from 'react-router-transition';
 
+
+function bounce(val) {
+  return spring(val, {
+    stiffness: 330,
+    damping: 22,
+  });
+}
 
 
 ReactDOM.render(
 
+
   <Router>
 
-        <Switch>
-          <AnimatedSwitch
-            atEnter={{ opacity: 0 }}
-            atLeave={{ opacity: 0 }}
-            atActive={{ opacity: 1 }}
-            className="switch-wrapper"
-            >
+
+    <Switch>
+      {/*  Animations for page change*/}
+      <AnimatedSwitch
+        atEnter={{
+          opacity: 0,
+          scale: 1.2,
+        }}
+        atLeave={{
+          opacity: bounce(0),
+          scale: bounce(0.8),
+
+        }}
+        atActive={{
+          opacity: bounce(1),
+          scale: bounce(1),
+        }}
+        className="switch-wrapper"
+        >
 
           <Route exact path = "/" component = {Index} />
           <Route exact path = "/media" component = {Media} />
@@ -32,7 +52,7 @@ ReactDOM.render(
           <Route exact path = "/contact" component = {Contact} />
         </AnimatedSwitch>
 
-        </Switch>
+      </Switch>
 
     </Router>,
 

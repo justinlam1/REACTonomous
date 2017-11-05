@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component } from 'react';
 import {Grid, Row, Col, Button, FormGroup, PageHeader, Form, FormControl,
-  ControlLabel } from 'react-bootstrap'; 
+  ControlLabel } from 'react-bootstrap';
 
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
@@ -60,8 +60,8 @@ class Contact extends Component {
           subject: vs ? "success" : "error",
           message: vm ? "success" : "error",
           email: ee ? "error" : (ve ? "success" : "warning"),
-          status: `          Please ${!vfn || !vln || !vm || !vs || ee ? 
-            `fill out all fields${!ve && !ee ? 
+          status: `          Please ${!vfn || !vln || !vm || !vs || ee ?
+            `fill out all fields${!ve && !ee ?
               " and " : ""}` : ""}${!ee && !ve ? "enter a valid email address" : ""}`
         }
       })
@@ -76,7 +76,7 @@ class Contact extends Component {
   validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-  } 
+  }
 
   render() {
 

@@ -53,7 +53,7 @@ class CarouselStyled extends Component {
       color:'#EEE',
       margin: '20px',
       fontSize: '20px',
-      width: "200px",
+      // width: "200px",
       height: "50px",
       borderRadius:'0px',
       opacity: '1',
@@ -66,11 +66,38 @@ class CarouselStyled extends Component {
       opacity: '0.7',
     }
 
+    const linkStyle = {
+
+      backgroundColor:"#fff",
+      // width: '20px',
+      // float:'left',
+      textAlign:'center',
+      display: 'inline-block',
+
+
+    }
+    const linkStyle2 = {
+      // width: '50vw',
+      // float:'none',
+      backgroundColor:"#fff",
+      textAlign:'center',
+      // float:'center',
+      // display: 'block',
+
+      // margin: '0 auto',
+
+
+
+    }
+
     return(
       // <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} >
       //   <Carousel.Item >
+
       <div >
 
+        <div className = "inShadow" style = {{zIndex:'1'}}  />
+        {/*  Artifically adds a shadow on top of the video. The zIndex is important to show text above this dark shadow*/}
 
 
         <div style={{
@@ -80,42 +107,58 @@ class CarouselStyled extends Component {
         }} >
 
 
-        <div className = "inShadow" >
-          <video autoPlay muted   loop style={{
+        <div >
+          <video  autoPlay muted   loop style={{
             objectFit: 'cover',
             width: '100vw',
             height: '100vh',
+            zIndex: '-1',
           }} src= "https://www.dl.dropboxusercontent.com/s/lh2i4rvcerwxq7h/Wato_Intro3.mov?dl=0"
         />
       </div>
 
-      <div className = "centerTop" style = {{paddingTop: "0px"}}>
-        <h1 className = "carouselHeading" style = {{textAlign:
-          "center"}}>ENGINEERING THE FUTURE OF TRANSPORTATION</h1>
-          {/* <h1 className = "carou">OF TRANSPORTATION</h1> */}
-          <p className = "carouselParagraph2">Waterloo's Autonomous Car Team</p>
-          <div style = {{textAlign:'center', paddingTop: '50px'}}>
-            <Link to = {'/sponsors'}   className = "button" ><Button className = "buttonDark" >SPONSORS</Button> </Link>
-            <Link to = {'/media'}   className = "button" ><Button className = "buttonDark" >OUR TEAM</Button> </Link>
+      <Grid>
+
+        <div className = "centerTop" style = {{paddingTop: "0px", zIndex: "2"}}>
+          <h1 className = "carouselHeading" style = {{textAlign:
+            "center"}}>ENGINEERING THE FUTURE OF TRANSPORTATION</h1>
+            <p className = "carouselParagraph2">Waterloo's Autonomous Car Team</p>
+            <div style = {{textAlign:'center', paddingTop: '50px'}}>
+              <div style = {{width:"80%", paddingLeft:"20%", }}>
+
+                <Col md={6} mdPush={6} style = {{textAlign:'center'}}>
+                  {/* React columns were used to better center the buttons */}
+                  <a href='#SAE'  style = {linkStyle} style = {{float:'center'}} ><div className = "buttonDark" >SAE Challenge</div> </a>
+
+                </Col>
+                <Col md={6} mdPull={6}>
+                  <a href='#welcome'  style = {linkStyle} style = {{float:'center'}} ><div className = "buttonDark" >WATonomous</div> </a>
+                </Col>
+
+
+
+              </div>
+            </div>
+
+            <a href='#welcome'><div className = "downArrow" style = {arrowStyle}></div></a>
+            {/* A down arrow that jumps to the start of Indexbody1 Component */}
           </div>
-          <div className = "downArrow" style = {arrowStyle}><a href='#welcome'>Hello world</a></div>
-
-        </div>
 
 
+        </Grid>
 
       </div>
       {/* <div className = "downArrow2" >
 
-        </div> */}
+    </div> */}
 
 
-      </div>
+  </div>
 
-      // </Carousel>
+  // </Carousel>
 
-    );
-  }
+);
+}
 
 }
 export default CarouselStyled;
