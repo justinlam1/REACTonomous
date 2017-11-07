@@ -11,6 +11,9 @@ import '../Css/styles.css';
 
 
 class Contact extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
 
   constructor(props) {
     super(props);

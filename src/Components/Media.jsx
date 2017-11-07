@@ -11,12 +11,15 @@ import MediaBody1 from './MediaBody1.jsx';
 import MediaBody2 from './MediaBody2.jsx';
 
 import WatoCarArrived from '../Images/WatoCarArrived.jpg';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 
 class Media extends Component {
 
-
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
 
   render() {
 
@@ -30,9 +33,12 @@ class Media extends Component {
          />
         <CarouselImage
           image = {WatoCarArrived}
-          title = "SPONSORS"
-          subtitle = "Join us as we create Canada's first student designed autonomous vehicle"
+          title = "MEDIA"
+          subtitle = "Gallery and widespread coverage of WATonomous in the news"
          />
+         <section id="welcome" style = {{paddingTop:"20px"}}>
+           <div></div>
+         </section>
         <MediaBody1 />
         <MediaBody2 style = {{maxWidth: "100vw"}}/>
        <Footer/>

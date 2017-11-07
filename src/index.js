@@ -24,10 +24,10 @@ function bounce(val) {
 ReactDOM.render(
 
 
-  <Router>
+  <Router onUpdate={() => window.scrollTo(0, 0)}>
 
 
-    <Switch>
+    <Switch onUpdate={() => window.scrollTo(0, 0)}>
       {/*  Animations for page change*/}
       <AnimatedSwitch
         atEnter={{

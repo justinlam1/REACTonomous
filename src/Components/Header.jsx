@@ -63,6 +63,8 @@ class Header extends Component {
                 <NavItem eventKey={1} href="#"><Link to = {'/'} activeStyle={{ color: '#FFF' }} activeClassName = "button" className = "button" > HOME </Link></NavItem>
                 <NavItem eventKey={2} href="#"><Link to = {'/sponsors'} activeStyle={{ color: '#FFF' }} activeClassName = "button" className = "button" > SPONSORS </Link></NavItem>
                 <NavItem eventKey={3} href="#"><Link to = {'/media'} activeStyle={{ color: '#FFF' }} activeClassName = "button" className = "button" > MEDIA </Link></NavItem>
+                <NavItem eventKey={3} href="#"><Link to = {'/contact'} activeStyle={{ color: '#FFF' }} activeClassName = "button" className = "button" > Contact </Link></NavItem>
+
 
                 {/* <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
                   <MenuItem eventKey={3.1}>Action</MenuItem>

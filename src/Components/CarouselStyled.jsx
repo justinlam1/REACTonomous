@@ -14,6 +14,7 @@ import '../Css/styles.css';
 import '../Css/carousel.css';
 import DownArrow from '../Images/down-arrow.svg';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Scrollchor from 'react-scrollchor';
 
 
 class CarouselStyled extends Component {
@@ -128,11 +129,11 @@ class CarouselStyled extends Component {
                 <Row>
                 <Col md={6} mdPush={6} style = {{textAlign:'center'}}>
                   {/* React columns were used to better center the buttons */}
-                  <a href='#SAE'   ><div className = "buttonDark" >SAE Challenge</div> </a>
+                  <Scrollchor to='#SAE'   ><div className = "buttonDark" >SAE Challenge</div> </Scrollchor>
 
                 </Col>
                 <Col md={6} mdPull={6}>
-                  <a href='#welcome' ><div className = "buttonDark" >WATonomous</div> </a>
+                  <Scrollchor to='#welcome' ><div className = "buttonDark" >WATonomous</div> </Scrollchor>
                 </Col>
               </Row>
 
@@ -141,7 +142,7 @@ class CarouselStyled extends Component {
               </div>
             </div>
 
-            <a href='#welcome'><div className = "downArrow" style = {arrowStyle}></div></a>
+            <Scrollchor to='#welcome'><div className = "downArrow" style = {arrowStyle}></div></Scrollchor>
             {/* A down arrow that jumps to the start of Indexbody1 Component */}
           </div>
 

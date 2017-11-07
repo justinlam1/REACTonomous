@@ -50,7 +50,7 @@ class IndexBody3 extends Component {
 
           <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%", textAlign:"center"}}>
             <Col sm={6} md={4}>
-              <img style = {{height:"200px", marginTop: "-50px"}} src = {Detection}/>
+              <img style = {{height:"200px", marginTop: "50px"}} src = {Detection}/>
 
               <h2 style = {{textAlign:"center"}}>Object Detection</h2>
               <div className = "spacerSmall" />
@@ -58,14 +58,14 @@ class IndexBody3 extends Component {
             </Col>
 
             <Col sm={6} md={4}>
-              <img style = {{height:"200px", marginTop: "-50px"}} src = {LaneSwap}/>
+              <img style = {{height:"200px", marginTop: "50px"}} src = {LaneSwap}/>
 
               <h2 style = {{textAlign:"center"}}>Multi-Lane Changing</h2>
               <div className = "spacerSmall" />
 
             </Col>
             <Col sm={6} md={4}>
-              <img style = {{height:"200px", marginTop: "-50px"}} src = {DynamicImage}/>
+              <img style = {{height:"200px", marginTop: "50px"}} src = {DynamicImage}/>
               <h2 style = {{textAlign:"center"}} >Dynamic Collision Avoidance</h2>
               <div className = "spacerSmall" />
             </Col>

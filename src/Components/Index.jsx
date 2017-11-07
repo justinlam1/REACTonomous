@@ -44,6 +44,9 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 class Index extends Component {
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
 
   render() {
     const FacebookIcon = generateShareIcon('facebook');
@@ -78,9 +81,9 @@ class Index extends Component {
           />
           <CarouselStyled style = {{width: '100%'}} />
 
-          <ScrollableAnchor id={'welcome'}>
-            <div> </div>
-          </ScrollableAnchor>
+          <section id="welcome">
+            <div></div>
+          </section>
 
           <IndexBody1 style = {{width: '100%'}} />
           <div className = "spacerBig">
@@ -132,9 +135,9 @@ class Index extends Component {
           </div>
 
 
-          <ScrollableAnchor id={'SAE'}>
-            <div> </div>
-          </ScrollableAnchor>
+          <section id="SAE" style = {{paddingTop:"20px"}}>
+            <div></div>
+          </section>
           <IndexBody2 className = "textWrap" style = {{zIndex:"3"}}/>
 
 

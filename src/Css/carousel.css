@@ -16,6 +16,15 @@
   font-size: 30px;
   color: #FFF;
 }
+.carouselSubtitle {
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  font-family: RalewayLig, sans-serif;
+  font-size: 40px;
+  color: #FFF;
+}
 
 
 @media screen and (max-width: 680px) {
@@ -33,12 +42,30 @@
     font-size: 20px;
     color: #FFF;
   }
+  .carouselSubtitle {
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    font-family: RalewayLig, sans-serif;
+    font-size: 15px;
+    color: #FFF;
+  }
 }
 
 
 .inShadow {
   position: absolute;
   box-shadow: inset -00px 250px 10000px rgba(0,0,0,0.35);
+  width: 100vw;
+  height: 100vh;
+  /*background: rgba(0, 0, 0, 0);*/
+  /*background-color: #FFF;*/
+
+}
+.inShadowDark {
+  position: absolute;
+  box-shadow: inset -00px 250px 10000px rgba(0,0,0,0.75);
   width: 100vw;
   height: 100vh;
   /*background: rgba(0, 0, 0, 0);*/

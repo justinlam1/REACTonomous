@@ -14,13 +14,21 @@ import SAE from '../Images/SAE.png';
 import UWEng from '../Images/logo_Waterloo_600.jpeg';
 import MathWorks from '../Images/MathWorkslogo.jpg';
 import TASS from '../Images/Tasslogo.png';
-import CON from '../Images/Continental.png'; 
-import Intel from '../Images/Intellogo.png'; 
-import Velo from '../Images/Velodyne.png'; 
+import CON from '../Images/Continental.png';
+import Intel from '../Images/Intellogo.png';
+import Velo from '../Images/Velodyne.png';
 import Check from '../Images/checkmark.png';
-import Bike from '../Images/WatoMedia5.jpg'; 
+import Bike from '../Images/WatoMedia5.jpg';
+import Scrollchor from 'react-scrollchor';
+// import {Section} from 'react-scrollchor';
+
 
 class Sponsors extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0,0);
+
+  }
 
   render() {
 
@@ -32,29 +40,36 @@ class Sponsors extends Component {
         </style>
         <Header
           home = {0}
-         />
-            <CarouselImage 
-            image = {WATOimage}
         />
+        <CarouselImage
+          image = {WATOimage}
+          title = "SPONSORS"
+          subtitle = "Join us as we create Canada's first student designed autonomous vehicle"
+        />
+        <section id="welcome" style = {{paddingTop:"20px"}}>
+          <div></div>
+        </section>
+
+
         <h1 class="title">Our Sponsors</h1>
         <div class="containBlurb">
           <p id="blurb">As WATonomous grows, it requires a significant investment into software and
-                      hardware. These investments are possible through the gracious support of our
-                      sponsors.</p>          
-        </div>
-       <div class="separation"></div>
-       <div class="sponsors">
-         <img src={GM} alt="General Motors"></img>
-         <img src={SAE} alt="SAE International"></img>
-         <img id="UWEng" src={UWEng} alt="Waterloo Engineering"></img>
-         <img id="Math" src={MathWorks} alt="MathWorks"></img>
-         <img id="tass" src={TASS} alt="Tass International"></img>
-         <img id="con" src={CON} alt="Continental"></img>
-         <img id="intel" src={Intel} alt="Intel"></img>
-         <img id="velo" src={Velo} alt="Velodyne liDAR"></img>
-       </div>
-       <div class="parallax">
-           <table class="tablecity">
+            hardware. These investments are possible through the gracious support of our
+            sponsors.</p>
+          </div>
+          <div class="separation"></div>
+          <div class="sponsors">
+            <img src={GM} alt="General Motors"></img>
+            <img src={SAE} alt="SAE International"></img>
+            <img id="UWEng" src={UWEng} alt="Waterloo Engineering"></img>
+            <img id="Math" src={MathWorks} alt="MathWorks"></img>
+            <img id="tass" src={TASS} alt="Tass International"></img>
+            <img id="con" src={CON} alt="Continental"></img>
+            <img id="intel" src={Intel} alt="Intel"></img>
+            <img id="velo" src={Velo} alt="Velodyne liDAR"></img>
+          </div>
+          <div class="parallax">
+            <table class="tablecity">
               <tr>
                 <th class="benefits">Sponsorship Benefits</th>
                 <th>Bronze $1000</th>
@@ -74,21 +89,21 @@ class Sponsors extends Component {
                 <td><img src={Check}></img></td>
                 <td><img src={Check}></img></td>
                 <td></td>
-                <td></td> 
+                <td></td>
               </tr>
               <tr>
                 <td class="benefits">Tour of WATonomous</td>
                 <td><img src={Check}></img></td>
                 <td><img src={Check}></img></td>
                 <td><img src={Check}></img></td>
-                <td><img src={Check}></img></td> 
+                <td><img src={Check}></img></td>
               </tr>
               <tr>
                 <td class="benefits">Vehicle Company Visit</td>
                 <td></td>
                 <td><img src={Check}></img></td>
                 <td><img src={Check}></img></td>
-                <td><img src={Check}></img></td> 
+                <td><img src={Check}></img></td>
               </tr>
               <tr>
                 <td class="benefits">Signed Team Photo on Plaque</td>
@@ -102,7 +117,7 @@ class Sponsors extends Component {
                 <td></td>
                 <td></td>
                 <td><img src={Check}></img></td>
-                <td><img src={Check}></img></td> 
+                <td><img src={Check}></img></td>
               </tr>
               <tr>
                 <td class="benefits">Cross Promotional Video to be posted on Social Media and Website</td>
@@ -115,21 +130,21 @@ class Sponsors extends Component {
                 <td class="benefits">Company logo on vehicle</td>
                 <td>Standard</td>
                 <td>Standard</td>
-                <td>Medium</td>  
-                <td>Large</td> 
+                <td>Medium</td>
+                <td>Large</td>
               </tr>
             </table>
-       </div>
-       <Footer />
-      </div>
+          </div>
+          <Footer />
+        </div>
 
 
-    );
+      );
 
-  };
-
-
-}
+    };
 
 
-export default Sponsors
+  }
+
+
+  export default Sponsors
