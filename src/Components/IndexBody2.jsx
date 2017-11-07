@@ -11,7 +11,7 @@ class IndexBody2 extends Component {
   render() {
 
     return(
-      <Grid>
+      <Grid style = {{backgroundColor: "#FFF", paddingTop:"20px"}}>
         <Row className="show-grid">
           <Col xs = {3} md = {4}>
 
@@ -19,7 +19,7 @@ class IndexBody2 extends Component {
           <Col xs={20} md={12}>
 
 
-            <div className = "OverviewSmall">
+            <div className = "OverviewSmall" style = {{backgroundColor: "#FFF"}}>
               {/* <div className = "spacerMedium" /> */}
               <div className = "spacerBig" />
 

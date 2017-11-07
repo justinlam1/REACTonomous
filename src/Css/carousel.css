@@ -16,13 +16,7 @@
   font-size: 30px;
   color: #FFF;
 }
-@media screen and (max-width: 480px) {
-  .carouselHeading {
-    font-family: RalewayBld, sans-serif;
-    font-size: 35px;
-    color: #FFF;
-  }
-}
+
 
 @media screen and (max-width: 680px) {
   .carouselHeading {

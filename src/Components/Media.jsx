@@ -30,6 +30,8 @@ class Media extends Component {
          />
         <CarouselImage
           image = {WatoCarArrived}
+          title = "SPONSORS"
+          subtitle = "Join us as we create Canada's first student designed autonomous vehicle"
          />
         <MediaBody1 />
         <MediaBody2 style = {{maxWidth: "100vw"}}/>

@@ -30,6 +30,11 @@ import BoltChasis from '../Images/BoltChasis.jpeg';
 import WatoSocialMedia from '../Images/WatoGroupSocial.jpg';
 import WatoSocialCar from '../Images/WatoGroupWithCar.jpg';
 
+import BoltHD1 from '../Images/BoltHD1.jpg';
+import BoltHD2 from '../Images/BoltHD2.jpg';
+import BoltHD3 from '../Images/BoltHD3.jpg';
+
+
 import {ShareButtons,ShareCounts,generateShareIcon} from 'react-share';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
@@ -79,37 +84,86 @@ class Index extends Component {
 
           <IndexBody1 style = {{width: '100%'}} />
           <div className = "spacerBig">
-
           </div>
-
-          <div style = {{height: "700px"}}>
-            <Parallax bgImage={BoltChasis} strength={100} >
+          <div style = {{maxHeight: "300px"}}>
+            <Parallax bgImage={BoltHD1} strength={50} bgStyle = {{backgroundSize:'cover'}} >
               <div className = "shadowBox2"></div>
 
+              <div style = {{height: "20px"}}> </div>
+              <div className = "textWrap">
+                <h1 className = "heading" style = {{color:"#FFF"}}>YEAR 1
+                </h1>
+                <h2 className = "parallaxSubTitle">Focuses on concept selection by having us become familiar with sensing and computation software. These simple missions can include straight roadway driving and object avoidance/detection. The Year 1 final competition will be hosted at GM’s Desert Proving Ground in Yuma, Arizona
+                </h2>
+
+                <div style = {{height: "160px"}}> </div>
+              </div>
+            </Parallax>
+          </div>
+          <div style = {{maxHeight: "300px"}}>
+            <Parallax bgImage={BoltHD3} strength={50} bgStyle = {{backgroundSize:'cover', paddingTop: '0'}} >
+              <div className = "shadowBox2"></div>
+
+              <div style = {{height: "20px"}}> </div>
+              <div className = "textWrap">
+                <h1 className = "heading" style = {{color:"#FFF"}}>YEAR 2
+                </h1>
+                <h2 className = "parallaxSubTitle">We will refine our concept selections into solid system developments and will have more challenging dynamic events for testing on-site, including dynamic object detection and multiple lane changing
+                </h2>
+
+                <div style = {{height: "160px"}}> </div>
+              </div>
+            </Parallax>
+          </div>
+          <div style = {{maxHeight: "300px"}}>
+            <Parallax bgImage={BoltHD2} strength={50} bgStyle = {{backgroundSize:'cover'}}>
+              <div className = "shadowBox2"></div>
+
+              <div style = {{height: "20px"}}> </div>
+              <div className = "textWrap">
+                <h1 className = "heading" style = {{color:"#FFF"}}>YEAR 3
+                </h1>
+                <h2 className = "parallaxSubTitle">Will culminate with final validation of our design and concept refinement. Our autonomous car will navigate complex objectives of on-site testing, including higher speeds, roundabouts and moving object detection
+                </h2>
+
+                <div style = {{height: "160px"}}> </div>
+              </div>
+            </Parallax>
+          </div>
+
+
+          <ScrollableAnchor id={'SAE'}>
+            <div> </div>
+          </ScrollableAnchor>
+          <IndexBody2 className = "textWrap" style = {{zIndex:"3"}}/>
+
+
+          <div style = {{height: "500px"}}>
+            <Parallax bgImage={BoltChasis} strength={100} >
+              <div className = "shadowBox2" s></div>
+
               <div style = {{height: "50px"}}> </div>
-              <div style = {{ width: "100%", textAlign: "center"}}>
-                <h1 className = "heading" style = {{color:"#FFF"}}>Electric Self Driving Vehicle
+              <div className = "textWrap">
+                <h1 className = "heading" style = {{color:"#FFF", zIndex: '2'}}>Electric Self Driving Vehicle
                 </h1>
                 <h2 className = "parallaxSubTitle">Sponsor one of the leading autonomous vehicle teams in Canada
                 </h2>
-                <Link to = {'/'} activeStyle={{ color: '#FFF' }} activeClassName = "button" className = "button" ><div className = "buttonDark" >SPONSOR</div></Link>
+                <Link to = {'/sponsors'}  ><div className = "buttonDark" >SPONSOR</div></Link>
                 <div style = {{height: "300px"}}> </div>
               </div>
             </Parallax>
           </div>
-          <ScrollableAnchor id={'SAE'}>
-            <div> </div>
-          </ScrollableAnchor>
-          <IndexBody2 />
+
+          {/* <IndexBody2 /> */}
           <IndexBody3 />
 
-          <div style = {{height: "630px"}}>
+          <div style = {{height: "530px"}}>
 
-            <Parallax bgImage={WatoSocialMedia} strength={100} >
+            <Parallax bgImage={WatoSocialMedia} strength={100} bgStyle = {{marginTop:'-100px'}} >
               <div className = "shadowBox"></div>
 
               <div style = {{height: "50px"}}> </div>
-              <div style = {{ width: "100%", textAlign: "center", height: "480px"}}>
+              <div className = "textWrap2" style = {{height: '480px'}}>
                 <h1 className = "heading" style = {{color:"#FFF"}}>Follow Us On Social Media
                 </h1>
                 <h2 className = "parallaxSubTitle">Keep up to date on our development progress, incoming recruitment rounds, and our latest sponsorships.

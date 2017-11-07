@@ -72,20 +72,40 @@ class CarouselImage extends Component {
         }} >
       </div>
 
-      <div className = "centerTop2" style = {{paddingTop: "0px"}}>
-        <h1 className = "carouselHeading" style = {{textAlign:
-          "left"}}>Sponsors</h1>
+      <Grid>
 
-          <p className = "carouselParagraph2" style = {{textAlign:'left'}}></p>
-          <div style = {{textAlign:'center', paddingTop: '50px'}}>
+        <div className = "centerTop" style = {{paddingTop: "0px", zIndex: "2"}}>
+          <h1 className = "carouselHeading" style = {{textAlign:
+            "center"}}>ENGINEERING THE FUTURE OF TRANSPORTATION</h1>
+            <p className = "carouselParagraph2">Waterloo's Autonomous Car Team</p>
+            <div style = {{textAlign:'center', paddingTop: '50px'}}>
+              <div style = {{width:"80%", paddingLeft:"20%" }}>
+                <Row>
+                <Col md={6} mdPush={6} style = {{textAlign:'center'}}>
+                  {/* React columns were used to better center the buttons */}
+                  <a href='#SAE'   ><div className = "buttonDark" >SAE Challenge</div> </a>
 
+                </Col>
+                <Col md={6} mdPull={6}>
+                  <a href='#welcome' ><div className = "buttonDark" >WATonomous</div> </a>
+                </Col>
+              </Row>
+
+
+
+              </div>
+            </div>
+
+            <a href='#welcome'><div className = "downArrow" style = {arrowStyle}></div></a>
+            {/* A down arrow that jumps to the start of Indexbody1 Component */}
           </div>
-        </div>
+
+
+        </Grid>
 
 
 
-        <a href='#welcome'><div className = "downArrow" style = {arrowStyle}>
-        </div></a>
+      
 
 
 

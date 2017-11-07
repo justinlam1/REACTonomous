@@ -89,12 +89,7 @@ html, body {
   padding-bottom: 40px;
 }
 
-.heading {
-  text-align: center;
-  font-family: RalewayLig, sans-serif;
-  font-size: 38px;
-  color: #333;
-}
+
 h2 {
   text-align: left;
   font-family: RalewayReg, sans-serif;
@@ -151,19 +146,7 @@ p2 {
   color: #FFF;
 }
 
-.carouselParagraph2 {
-  text-align: center;
 
-  /*line-height: 40px;*/
-  line-height: 30px;
-  letter-spacing: 1.6px;
-
-
-  font-family: RalewayLig, sans-serif;
-  font-size: 30px;
-
-  color: #FFF;
-}
 
 .greyBackgroundColor {
   background-color: #FAFAFA;

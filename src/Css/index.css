@@ -1,21 +1,87 @@
+@font-face { font-family: RalewayReg; src: url('../Raleway/Raleway-Regular.ttf'); }
+@font-face { font-family: RalewayLig; src: url('../Raleway/Raleway-Light.ttf'); }
+
+@font-face { font-family: RalewayBld; src: url('../Raleway/Raleway-Bold.ttf'); }
+@font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
+
 .shadowBox {
-  box-shadow: 0px 150px 280px #000;
+  /*box-shadow: 0px 150px 280px #000;
   width: 100vw;
   height: 100px;
-  background-color: #FAFAFA;
+  background-color: #FAFAFA;*/
+  position: absolute;
+  box-shadow: inset -00px 250px 10000px rgba(0,0,0,0.35);
+  width: 100vw;
+  height: 100%;
+  /*z-index: 1;*/
+
 }
 
 .shadowBox2 {
-  box-shadow: 0px 150px 280px #000;
+  position: absolute;
+  box-shadow: inset -00px 150px 10000px rgba(0,0,0,0.65);
+  width: 100vw;
+  height: 100%;
+  /*z-index: 1;*/
+  /*box-shadow: 0px 150px 280px #000;
   width: 100vw;
   height: 100px;
-  background-color: #FFF;
+  background-color: #FFF;*/
 }
-
 .parallaxSubTitle {
+  font-family: RalewayLig;
   color:#FFF;
    text-align:center;
-   font-size: 18px;
+   font-size: 20px;
    padding-left: 20px;
    padding-right: 20px;
+   letter-spacing: 0.5px;
+   line-height: 22px;
+
+}
+.heading {
+  text-align: center;
+  font-family: RalewayReg, sans-serif;
+  font-size: 38px;
+  color: #333;
+}
+@media screen and (max-width: 680px) {
+  .parallaxSubTitle {
+    font-family: RalewayLig;
+    color:#FFF;
+     text-align:center;
+     font-size: 12px;
+     padding-left: 20px;
+     padding-right: 20px;
+     letter-spacing: 0.5px;
+     line-height: 22px;
+  }
+  .heading {
+    text-align: center;
+    font-family: RalewayReg, sans-serif;
+    font-size: 28px;
+    color: #333;
+  }
+
+}
+
+
+
+
+
+.textWrap {
+  text-align: center;
+  width: 90%;
+  opacity: 1;
+  margin: 0 auto;
+  /*padding-top: -200px;*/
+  position: relative;
+
+}
+.textWrap2 {
+  text-align: center;
+  width: 100%;
+  opacity: 1;
+  position: relative;
 }

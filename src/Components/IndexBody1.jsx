@@ -3,6 +3,10 @@ import '../Css/styles.css';
 import WatoLogo from '../Images/WATOlogoblue.svg';
 
 import {Grid, Row, Col} from 'react-bootstrap';
+import BoltHD1 from '../Images/BoltHD1.jpg';
+import BoltHD2 from '../Images/BoltHD2.jpg';
+import BoltHD3 from '../Images/BoltHD3.jpg';
+import { Parallax } from 'react-parallax';
 
 
 class IndexBody1 extends Component {
@@ -44,12 +48,13 @@ class IndexBody1 extends Component {
 
         </Row>
         <div className = "spacerMedium" />
+
         {/* <div style = {{textAlign:"center"}}>
           <img style = {{height:"200px", marginTop: "-50px"}} src = {WatoLogo}/>
 
         </div> */}
 
-        <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%"}}>
+        {/* <Row className="show-grid" style = {{width:"90%", paddingLeft: "10%"}}>
           <Col sm={6} md={4}>
 
             <h2 >Year 1</h2>
@@ -67,7 +72,7 @@ class IndexBody1 extends Component {
             <h2  >Year 3</h2>
             <div className = "spacerSmall" />
             <p2 >Will culminate with final validation of our design and concept refinement. Our autonomous car will navigate complex objectives of on-site testing, including higher speeds, roundabouts and moving object detection.</p2></Col>
-          </Row>
+          </Row> */}
 
         </Grid>
 
