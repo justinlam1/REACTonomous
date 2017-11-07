@@ -128,11 +128,11 @@ class CarouselStyled extends Component {
                 <Row>
                 <Col md={6} mdPush={6} style = {{textAlign:'center'}}>
                   {/* React columns were used to better center the buttons */}
-                  <a href='#SAE'  style = {linkStyle} style = {{float:'center'}} ><div className = "buttonDark" >SAE Challenge</div> </a>
+                  <a href='#SAE'   ><div className = "buttonDark" >SAE Challenge</div> </a>
 
                 </Col>
                 <Col md={6} mdPull={6}>
-                  <a href='#welcome'  style = {linkStyle} style = {{float:'center'}} ><div className = "buttonDark" >WATonomous</div> </a>
+                  <a href='#welcome' ><div className = "buttonDark" >WATonomous</div> </a>
                 </Col>
               </Row>
 

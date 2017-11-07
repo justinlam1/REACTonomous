@@ -85,7 +85,7 @@ function NextArrow(props) {
 
 
       return (
-        <div style = {{maxHeight: '200px', width: '90vw'}}>
+        <div style = {{ maxWidth: '70vw', width: '100%'}}>
           {props.isOpen &&
             <Lightbox
               mainSrc={images[props.photoIndex]}
@@ -200,6 +200,20 @@ function NextArrow(props) {
                     <p className = "descriptionText">See our latest developments and be the first to hear of our coming recruitment seasons
 
                     </p>
+                    <div style = {{textAlign:"center", padding:"20px"}}>
+                      <SocialIcon style = {{margin:"10px"}} url = "https://twitter.com/watonomous?lang=en" ></SocialIcon>
+                      <SocialIcon style = {{margin:"10px"}} url = "https://www.facebook.com/WATonomous/"></SocialIcon>
+                      <SocialIcon style = {{margin:"10px"}} url = "https://www.instagram.com/watonomous/"></SocialIcon>
+                    </div>
+
+                    <div className = "spacerSmall"/>
+
+                    <SliderScroll
+                      isOpen = {this.state.isOpen}
+                      photoIndex = {this.state.photoIndex}
+                      state = {this.state}
+                      onClick = {i => this.handleGalleryClick(i)}
+                    />
 
 
 
@@ -214,7 +228,7 @@ function NextArrow(props) {
 
 
               </Row>
-              <div style = {{textAlign:"center", padding:"20px"}}>
+              {/* <div style = {{textAlign:"center", padding:"20px"}}>
                 <SocialIcon style = {{margin:"10px"}} url = "https://twitter.com/watonomous?lang=en" ></SocialIcon>
                 <SocialIcon style = {{margin:"10px"}} url = "https://www.facebook.com/WATonomous/"></SocialIcon>
                 <SocialIcon style = {{margin:"10px"}} url = "https://www.instagram.com/watonomous/"></SocialIcon>
@@ -227,7 +241,7 @@ function NextArrow(props) {
                 photoIndex = {this.state.photoIndex}
                 state = {this.state}
                 onClick = {i => this.handleGalleryClick(i)}
-              />
+              /> */}
 
               <div className = "spacerMedium" />
               {/* <div style = {{textAlign:"center"}}>

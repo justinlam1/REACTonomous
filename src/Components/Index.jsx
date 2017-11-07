@@ -3,6 +3,7 @@ import {Grid, Row, Col, Button} from 'react-bootstrap';
 import { Parallax } from 'react-parallax';
 import logo from '../Images/logo.svg';
 import { SocialIcon } from 'react-social-icons';
+import { Link } from 'react-router-dom'
 
 
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -82,7 +83,7 @@ class Index extends Component {
           </div>
 
           <div style = {{height: "700px"}}>
-            <Parallax bgImage={BoltChasis} strength={400} >
+            <Parallax bgImage={BoltChasis} strength={100} >
               <div className = "shadowBox2"></div>
 
               <div style = {{height: "50px"}}> </div>
@@ -91,8 +92,8 @@ class Index extends Component {
                 </h1>
                 <h2 className = "parallaxSubTitle">Sponsor one of the leading autonomous vehicle teams in Canada
                 </h2>
-                <Button bsStyle="primary" >Sponsors</Button>
-                <div style = {{height: "400px"}}> </div>
+                <Link to = {'/'} activeStyle={{ color: '#FFF' }} activeClassName = "button" className = "button" ><div className = "buttonDark" >SPONSOR</div></Link>
+                <div style = {{height: "300px"}}> </div>
               </div>
             </Parallax>
           </div>
@@ -104,7 +105,7 @@ class Index extends Component {
 
           <div style = {{height: "630px"}}>
 
-            <Parallax bgImage={WatoSocialMedia} strength={400} >
+            <Parallax bgImage={WatoSocialMedia} strength={100} >
               <div className = "shadowBox"></div>
 
               <div style = {{height: "50px"}}> </div>

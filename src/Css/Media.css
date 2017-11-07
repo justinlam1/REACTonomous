@@ -2,3 +2,13 @@
 .slick-next:before {
   color: #333;
 }
+
+.mediaSlide {
+  width: 100%;
+  /*margin-left: 0.5%;*/
+  /*padding-left: 0vw;*/
+}
+
+@media screen and (max-width: 480px) {
+
+}

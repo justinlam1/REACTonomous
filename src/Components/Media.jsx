@@ -32,7 +32,7 @@ class Media extends Component {
           image = {WatoCarArrived}
          />
         <MediaBody1 />
-        <MediaBody2 />
+        <MediaBody2 style = {{maxWidth: "100vw"}}/>
        <Footer/>
       </div>
 

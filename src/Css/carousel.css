@@ -8,18 +8,39 @@
   /*margin-top: -20px;*/
   color: #FFF;
 }
+.carouselParagraph2 {
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 1.6px;
+  font-family: RalewayLig, sans-serif;
+  font-size: 30px;
+  color: #FFF;
+}
 @media screen and (max-width: 480px) {
   .carouselHeading {
-    /*padding-top: 20px;*/
-    line-height: 70px;
-
     font-family: RalewayBld, sans-serif;
-
     font-size: 35px;
-    /*margin-top: -20px;*/
     color: #FFF;
   }
 }
+
+@media screen and (max-width: 680px) {
+  .carouselHeading {
+    line-height: 40px;
+    font-family: RalewayBld, sans-serif;
+    font-size: 35px;
+    color: #FFF;
+  }
+  .carouselParagraph2 {
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+    font-family: RalewayLig, sans-serif;
+    font-size: 20px;
+    color: #FFF;
+  }
+}
+
 
 .inShadow {
   position: absolute;
@@ -29,6 +50,12 @@
   /*background: rgba(0, 0, 0, 0);*/
   /*background-color: #FFF;*/
 
+}
+.linkStyle {
+  background-color: #fff;
+  text-align:center;
+  display: inline-block;
+  float:center;
 }
 
 .centerTop {
