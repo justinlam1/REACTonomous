@@ -5,6 +5,7 @@ import { Parallax } from 'react-parallax';
 import ParallaxComponent from 'react-parallax-component';
 import testVideo from '../Images/testVideo.mp4';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
+import BigVideo from '../Images/mediaVideo.mp4'
 
 import { Link } from 'react-router-dom'
 
@@ -109,13 +110,18 @@ class CarouselStyled extends Component {
 
 
         <div >
+          <div className = "inShadow" style = {{zIndex:'1'}}  />
+
           <video  autoPlay muted   loop style={{
             objectFit: 'cover',
             width: '100vw',
             height: '100vh',
-            zIndex: '-1',
-          }} src= "https://www.dl.dropboxusercontent.com/s/lh2i4rvcerwxq7h/Wato_Intro3.mov?dl=0"
+            zIndex: '-2',
+          }}
+          src = {BigVideo}
+          // src= "https://www.dl.dropboxusercontent.com/s/lh2i4rvcerwxq7h/Wato_Intro3.mov?dl=0"
         />
+
       </div>
 
       <Grid>

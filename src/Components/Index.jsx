@@ -27,6 +27,7 @@ import ParallaxImg1 from '../Images/CityPoly.jpg';
 import BoltFront from '../Images/BoltFront4.png';
 import Watleader from '../Images/WatLeaders.jpg';
 import BoltChasis from '../Images/BoltChasis.jpeg';
+import BoltInside from '../Images/BoltInside3.png';
 import WatoSocialMedia from '../Images/WatoGroupSocial.jpg';
 import WatoSocialCar from '../Images/WatoGroupWithCar.jpg';
 
@@ -157,7 +158,7 @@ class Index extends Component {
 
 
         <div style = {{height: "500px"}}>
-          <Parallax bgImage={BoltChasis} strength={100} >
+          <Parallax bgImage={BoltInside} strength={100} >
             <div className = "shadowBox2" s></div>
 
             <div style = {{height: "50px"}}> </div>
@@ -178,14 +179,14 @@ class Index extends Component {
         <div style = {{height: "530px"}}>
 
           <Parallax bgImage={WatoSocialMedia} strength={100} bgStyle = {{marginTop:'-100px'}} >
-            <div className = "shadowBox"></div>
+            <div className = "shadowBox2"></div>
 
             <div style = {{height: "50px"}}> </div>
             <div className = "textWrap2" style = {{height: '480px'}}>
               <h1 className = "heading" style = {{color:"#FFF"}}>Follow Us On Social Media
               </h1>
-              <h2 className = "parallaxSubTitle">Keep up to date on our development progress, incoming recruitment rounds, and our latest sponsorships.
-              </h2>
+              {/* <h2 className = "parallaxSubTitle">Keep up to date on our development progress, incoming recruitment rounds, and our latest sponsorships. */}
+              {/* </h2> */}
 
 
               <SocialIcon style={iconStyle} url="https://www.facebook.com/WATonomous/" />
