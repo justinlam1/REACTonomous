@@ -89,7 +89,10 @@ class Index extends Component {
           <Header
             home = {1}
           />
+          <FadeIn>
+
           <CarouselStyled style = {{width: '100%'}} />
+        </FadeIn>
 
           <section id="welcome">
             <div></div>

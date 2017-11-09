@@ -21,6 +21,7 @@ import Check from '../Images/checkmark.png';
 import Bike from '../Images/WatoMedia5.jpg';
 import Scrollchor from 'react-scrollchor';
 // import {Section} from 'react-scrollchor';
+import FadeIn from 'react-fade-in';
 
 
 class Sponsors extends Component {
@@ -40,11 +41,13 @@ class Sponsors extends Component {
         <Header
           home = {0}
         />
+        <FadeIn>
         <CarouselImage
           image = {WATOimage}
           title = "SPONSORS"
           subtitle = "Join us as we create Canada's first student designed autonomous vehicle"
         />
+      </FadeIn>
         <section id="welcome" style = {{paddingTop:"20px"}}>
           <div></div>
         </section>

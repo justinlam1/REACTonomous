@@ -12,6 +12,7 @@ import MediaBody2 from './MediaBody2.jsx';
 
 import WatoCarArrived from '../Images/WatoCarArrived.jpg';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import FadeIn from 'react-fade-in';
 
 
 
@@ -31,11 +32,15 @@ class Media extends Component {
         <Header
           home = {0}
          />
+         <FadeIn>
+
         <CarouselImage
           image = {WatoCarArrived}
           title = "MEDIA"
           subtitle = "Gallery and widespread coverage of WATonomous in the news"
          />
+       </FadeIn>
+
          <section id="welcome" style = {{paddingTop:"20px"}}>
            <div></div>
          </section>
