@@ -33,6 +33,9 @@ import WatoSocialCar from '../Images/WatoGroupWithCar.jpg';
 import BoltHD1 from '../Images/BoltHD1.jpg';
 import BoltHD2 from '../Images/BoltHD2.jpg';
 import BoltHD3 from '../Images/BoltHD3.jpg';
+import { bounce } from 'react-animations'
+import { StyleSheet, css } from 'aphrodite';
+
 
 
 import {ShareButtons,ShareCounts,generateShareIcon} from 'react-share';
@@ -51,6 +54,12 @@ class Index extends Component {
   render() {
     const FacebookIcon = generateShareIcon('facebook');
     const TwitterIcon = generateShareIcon('twitter');
+    const styles = StyleSheet.create({
+    bounce: {
+      animationName: bounce,
+      animationDuration: '1s'
+    }
+  })
 
     const {
       FacebookShareButton,
