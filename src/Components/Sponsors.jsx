@@ -61,8 +61,8 @@ class Sponsors extends Component {
           </div>
           <div class="separation"></div>
           <div class="sponsors">
-            <img src={GM} alt="General Motors"></img>
-            <img src={SAE} alt="SAE International"></img>
+            <img id="GM" src={GM} alt="General Motors"></img>
+            <img id="SAE" src={SAE} alt="SAE International"></img>
             <img id="UWEng" src={UWEng} alt="Waterloo Engineering"></img>
             <img id="Math" src={MathWorks} alt="MathWorks"></img>
             <img id="tass" src={TASS} alt="Tass International"></img>
