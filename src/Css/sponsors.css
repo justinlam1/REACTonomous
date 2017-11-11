@@ -14,7 +14,7 @@ body {
 
 #GM{ /*this is some resizing code*/
 	max-width: 15%;
-    min-width: 75px; 
+    min-width: 110px; 
     height: auto;
     width: auto\9; /* ie8 */
     padding: 10px; 
@@ -22,7 +22,7 @@ body {
 
 #SAE{
 	max-width: 20%;
-    min-width: 100px; 
+    min-width: 148px; 
     height: auto;
     width: auto\9; /* ie8 */
     padding: 10px; 
@@ -30,7 +30,7 @@ body {
 
 #UWEng{
 	max-width: 35%;
-    min-width: 175px; 
+    min-width: 220px; 
     height: auto;
     width: auto\9; /* ie8 */
     padding: 10px; 
@@ -38,7 +38,7 @@ body {
 
 #Math{
 	max-width: 27%;
-    min-width: 170px; 
+    min-width: 175px; 
     height: auto;
     width: auto\9; /* ie8 */
     padding: 10px; 
@@ -46,7 +46,7 @@ body {
 
 #tass{
 	max-width: 25%;
-    min-width: 135px; 
+    min-width: 150px; 
     height: auto;
     width: auto\9; /* ie8 */
     padding: 10px; 
@@ -62,7 +62,7 @@ body {
 
 #intel{
 	max-width: 15%;
-    min-width: 70px; 
+    min-width: 90px; 
     height: auto;
     width: auto\9; /* ie8 */
     padding: 10px; 
@@ -85,37 +85,6 @@ body {
 
 	}
 }
-
-/* Ok no more hardcoding in the image sizes hahaha.
-#UWEng {
-	width: 360px;
-	height: 110px;
-}
-
-#Math {
-	width: 320px;
-	height: 70px;
-}
-
-#tass {
-	width: 300px;
-	height: 65px;
-}
-
-#con {
-	width: 320px;
-	height: 70px;
-}
-
-#intel {
-	width: 162px;
-	height: 108px;
-}
-
-#velo {
-	width: 360px;
-	height: 80px;
-} */
 
 .title {
 	text-align: center;
