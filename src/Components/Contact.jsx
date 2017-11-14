@@ -7,8 +7,12 @@ import {Grid, Row, Col, Button, FormGroup, PageHeader, Form, FormControl,
   import Footer from './Footer.jsx'
   import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
   import '../Css/styles.css';
+  import A from './Mailer/contact.js';
 
-
+//
+// import nodemailer from 'nodemailer'
+// import smtpTransport from 'nodemailer-smtp-transport';
+// import xoauth2 from 'xoauth2';
 
   class Contact extends Component {
     componentDidMount() {
@@ -35,6 +39,49 @@ import {Grid, Row, Col, Button, FormGroup, PageHeader, Form, FormControl,
       this.handleSubmit = this.handleSubmit.bind(this);
       this.getValidationState = this.getValidationState.bind(this);
       this.handleCheck = this.handleCheck.bind(this);
+      this.sendMyMail = this.sendMyMail.bind(this);
+
+
+    }
+
+    sendMyMail(event) {
+      // This function works perfectly with $ node contact.js under ./Mailer
+      console.log("attempted to send mail");
+      // module.exports = function sendMailPlease() {
+      var nodemailer = require('nodemailer');
+      var smtpTransport = require('nodemailer-smtp-transport');
+
+      let transporter = nodemailer.createTransport(smtpTransport({
+        service: 'gmail',
+        secure: false,
+        port: 25,
+        auth: {
+          user: 'watowebteam@gmail.com',
+          pass: 'WATonomous'
+        },
+        tls: {
+          rejectUnauthorized: false
+        }
+      }));
+
+      let HelperOptions = {
+        from: '"Wato Contact Form" <watowebteam@gmail.com',
+        to: 'eddie.ren.2013@gmail.com',
+        subject: 'dd',
+        text: 'dd'
+      };
+
+
+
+      transporter.sendMail(HelperOptions, (error, info) => {
+        if (error) {
+          console.log("Unable to send mail!");
+
+          return console.log(error);
+        }
+        console.log("The message was sent!");
+        console.log(info);
+      });
 
     }
 
@@ -71,6 +118,8 @@ import {Grid, Row, Col, Button, FormGroup, PageHeader, Form, FormControl,
 
     handleSubmit(event) {
       console.log(this.state);
+      this.sendMyMail(event)
+
       // True if verified to be non-empty
       let vfn = this.state.firstName.trim() !== "";
       let vln = this.state.lastName.trim() !== "";
