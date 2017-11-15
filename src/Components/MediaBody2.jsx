@@ -27,7 +27,7 @@ class MediaBody2 extends Component {
 
     return (
 
-      <Grid>
+      <Grid style = {{backgroundColor:'#FFF', width: '90vw'}}>
 
         <hr/>
 
@@ -42,119 +42,117 @@ class MediaBody2 extends Component {
           - Dr. Derek Rayside, UWaterloo professor and project mentor
         </p>
         <div className="spacerBig"></div>
-        {/* <Row>
-          <Col xs={3} md={4}></Col>
-          <Col xs={20} md={12}> */}
-          <div style = {{textAlign:'center'}}>
-            <Row className="show-grid mediaSlide">
-              <Col sm={6} md={4}>
-                <a href="http://media.gm.ca/media/ca/en/gm/home.detail.html/content/Pages/news/ca/en/2017/Apr/0405_Autonomous.html">
-                <div style={{textAlign: "center"}}>
-                  <img style={logoStyle} src={newsLogo1}></img>
-                </div>
-                <div className="spacerSmall"></div>
-                <h2 style={headline}>
-                  Two Canadian Universities Selected for New Autonomous Vehicle Competition
-                </h2>  </a>
-              </Col>
-              <Col sm={6} md={4}>
-                <a href="http://www.cbc.ca/listen/shows/the-morning-edition-k-w/episode/12268334">
-                <div style={{textAlign: "center"}}>
-                  <img style={logoStyle} src={newsLogo6}></img>
-                </div>
-                <div className="spacerSmall"></div>
-                <h2 style={headline}>
-                  University of Waterloo students take on autonomous vehicle challenge
-                </h2>  </a>
-              </Col>
-              <Col sm={6} md={4}>
-                <a href="http://www.theglobeandmail.com/news/national/two-canadian-universities-selected-for-north-american-self-driving-car-competition/article34699641/">
-                <div style={{textAlign: "center"}}>
-                  <img style={logoStyle} src={newsLogo2}>
 
-                  </img>
-                </div>
-                <div className="spacerSmall">
+        <div style = {{textAlign:'center', width:'90vw', }}>
+          <Row className="show-grid mediaSlide" style = {{textAlign:'center'}}>
+            <Col sm={6} md={4}>
+              <a href="http://media.gm.ca/media/ca/en/gm/home.detail.html/content/Pages/news/ca/en/2017/Apr/0405_Autonomous.html">
+              <div style={{textAlign: "center"}}>
+                <img style={logoStyle} src={newsLogo1}></img>
+              </div>
+              <div className="spacerSmall"></div>
+              <h2 style={headline}>
+                Two Canadian Universities Selected for New Autonomous Vehicle Competition
+              </h2>  </a>
+            </Col>
+            <Col sm={6} md={4}>
+              <a href="http://www.cbc.ca/listen/shows/the-morning-edition-k-w/episode/12268334">
+              <div style={{textAlign: "center"}}>
+                <img style={logoStyle} src={newsLogo6}></img>
+              </div>
+              <div className="spacerSmall"></div>
+              <h2 style={headline}>
+                University of Waterloo students take on autonomous vehicle challenge
+              </h2>  </a>
+            </Col>
+            <Col sm={6} md={4}>
+              <a href="http://www.theglobeandmail.com/news/national/two-canadian-universities-selected-for-north-american-self-driving-car-competition/article34699641/">
+              <div style={{textAlign: "center"}}>
+                <img style={logoStyle} src={newsLogo2}>
 
-                </div>
-                <h2 style={headline}>
-                  Two Canadian universities picked for North American self-driving car competition
-                </h2></a>
-              </Col>
+                </img>
+              </div>
+              <div className="spacerSmall">
 
-            </Row>
-            <div className="spacerBig"/>
+              </div>
+              <h2 style={headline}>
+                Two Canadian universities picked for North American self-driving car competition
+              </h2></a>
+            </Col>
 
-            <Row className="show-grid mediaSlide">
-              <Col sm={6} md={4}>
-                <a href="http://www.therecord.com/news-story/7243676-uw-will-strut-its-stuff-in-north-american-self-driving-car-competition/">
-                <div style={{
-                  textAlign: "center"
-                }}>
-                <img style={logoStyle} src={newsLogo3}/>
+          </Row>
+          <div className="spacerBig"/>
+
+          <Row className="show-grid mediaSlide">
+            <Col sm={6} md={4}>
+              <a href="http://www.therecord.com/news-story/7243676-uw-will-strut-its-stuff-in-north-american-self-driving-car-competition/">
+              <div style={{
+                textAlign: "center"
+              }}>
+              <img style={logoStyle} src={newsLogo3}/>
+            </div>
+            <div className="spacerSmall"/>
+            <h2 style={headline}>
+              UW will strut its stuff in North American self-driving car competition</h2></a>
+            </Col>
+            <Col sm={6} md={4}>
+              <a href="http://www.cbc.ca/news/canada/kitchener-waterloo/autonomous-vehicle-uw-gm-1.4063898">
+              <div style={{textAlign: "center"}}>
+                <img style={logoStyle} src={newsLogo6}/>
               </div>
               <div className="spacerSmall"/>
               <h2 style={headline}>
-                UW will strut its stuff in North American self-driving car competition</h2></a>
-              </Col>
-              <Col sm={6} md={4}>
-                <a href="http://www.cbc.ca/news/canada/kitchener-waterloo/autonomous-vehicle-uw-gm-1.4063898">
-                <div style={{textAlign: "center"}}>
-                  <img style={logoStyle} src={newsLogo6}/>
-                </div>
-                <div className="spacerSmall"/>
-                <h2 style={headline}>
-                  Look mom, no hands! UW students part of driverless car competition</h2>
-                </a>
-              </Col>
-              <Col sm={6} md={4}>
-                <a href="https://uwaterloo.ca/engineering/news/waterloo-selected-autonomous-vehicle-competition">
-                <div style={{textAlign: "center"  }}>
-                  <img style={logoStyle} src={newsLogo5}/>
-                </div>
-                <div className="spacerSmall"/>
-                <h2 style={headline}>
-                  Waterloo selected for autonomous vehicle competition</h2>
-                </a>
-              </Col>
-            </Row>
+                Look mom, no hands! UW students part of driverless car competition</h2>
+              </a>
+            </Col>
+            <Col sm={6} md={4}>
+              <a href="https://uwaterloo.ca/engineering/news/waterloo-selected-autonomous-vehicle-competition">
+              <div style={{textAlign: "center"  }}>
+                <img style={logoStyle} src={newsLogo5}/>
+              </div>
+              <div className="spacerSmall"/>
+              <h2 style={headline}>
+                Waterloo selected for autonomous vehicle competition</h2>
+              </a>
+            </Col>
+          </Row>
 
-            <div className="spacerBig"/>
+          <div className="spacerBig"/>
 
-            <Row className="show-grid mediaSlide">
-              <Col sm={6} md={4}>
-                <a href="https://uwaterloo.ca/daily-bulletin/2017-04-06">
-                <div style={{textAlign: "center"  }}>
-                  <img style={logoStyle} src={newsLogo5}/>
-                </div>
-                <div className="spacerSmall"/>
-                <h2 style={headline}>
-                  Waterloo kicks AutoDrive competition into high gear</h2>
-                </a>
-              </Col>
-              <Col sm={6} md={4}>
-                <a href="http://www.570news.com/2017/04/15/university-waterloo-team-enters-auto-drive-challenge-develop-self-driving-car/">
-                <div style={{  textAlign: "center"}}>
-                  <img style={logoStyle} src={newsLogo4}/>
-                </div>
-                <div className="spacerSmall"/>
-                <h2 style={headline}>
-                  University of Waterloo team enters “Auto Drive Challenge” to develop self-driving car</h2>
-                </a>
-              </Col>
+          <Row className="show-grid mediaSlide">
+            <Col sm={6} md={4}>
+              <a href="https://uwaterloo.ca/daily-bulletin/2017-04-06">
+              <div style={{textAlign: "center"  }}>
+                <img style={logoStyle} src={newsLogo5}/>
+              </div>
+              <div className="spacerSmall"/>
+              <h2 style={headline}>
+                Waterloo kicks AutoDrive competition into high gear</h2>
+              </a>
+            </Col>
+            <Col sm={6} md={4}>
+              <a href="http://www.570news.com/2017/04/15/university-waterloo-team-enters-auto-drive-challenge-develop-self-driving-car/">
+              <div style={{  textAlign: "center"}}>
+                <img style={logoStyle} src={newsLogo4}/>
+              </div>
+              <div className="spacerSmall"/>
+              <h2 style={headline}>
+                University of Waterloo team enters “Auto Drive Challenge” to develop self-driving car</h2>
+              </a>
+            </Col>
 
-            </Row>
-          </div>
-          {/* </Col> */}
-          {/* <Col xs={3} md={4}></Col>
-        </Row> */}
+          </Row>
+        </div>
+        {/* </Col> */}
+        {/* <Col xs={3} md={4}></Col>
+      </Row> */}
 
-        <div className="spacerBig"/>
+      <div className="spacerBig"/>
 
-      </Grid>
+    </Grid>
 
-    );
-  }
+  );
+}
 
 }
 

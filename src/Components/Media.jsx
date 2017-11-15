@@ -26,7 +26,7 @@ class Media extends Component {
 
     return(
       //I was thinking having quotes in a large font from news releases and linking the newspaper logo next to it, all in a column form.
-      <div style = {{maxWidth: "100%"}}>
+      <div style = {{maxWidth: "100vw"}}>
 
 
         <Header
@@ -45,7 +45,7 @@ class Media extends Component {
            <div></div>
          </section>
         <MediaBody1 />
-        <MediaBody2 style = {{maxWidth: "100vw"}}/>
+        <MediaBody2 style = {{maxWidth: "100vw", minWidth:'100vw'}}/>
        <Footer/>
       </div>
 
