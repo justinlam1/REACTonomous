@@ -124,16 +124,8 @@ class Apply extends Component {
                                         <FormControl.Feedback className="formcontrol-feedback"/>
                                     </Col>
                                 </FormGroup>
-                                <FormGroup name="returningMember" >
-                                    <Col xs={12} sm={8}>
-                                        <Checkbox onChange = {this.handleCheck} name = "returningMember">
-                                            I am a returning WATonomous member.
-                                        </Checkbox>
-                                        {/* <FormControl type="sponsor" onChange={this.handleInputChange} className="contact-form-input" name="checkbox"/> */}
-                                        <FormControl.Feedback className="formcontrol-feedback"/>
-                                    </Col>
-                                </FormGroup>
-
+                                
+<br />
 
                                 <FormGroup name="field-1-1" >
                                     <Col xs={12} sm={8}>
@@ -152,6 +144,45 @@ class Apply extends Component {
                                         <label>Will you be on a school term in Winter 2018?</label>
                                         <Radio>Yes</Radio>
                                         <Radio>No</Radio>
+                                    </Col>
+                                </FormGroup>
+                                
+                                <FormGroup name="field-1-3" >
+                                    <Col xs={12} sm={8}>
+                                        <label>Are you interested in a subteam lead position?</label>
+                                        <Radio>Yes</Radio>
+                                        <Radio>No</Radio>
+                                    </Col>
+                                </FormGroup>
+                                
+                                <FormGroup name="field-1-4" >
+                                    <Col xs={12} sm={8}>
+                                        <ControlLabel>Have you previously been a part of WATonomous?</ControlLabel>
+                                        <p>If you were not previously a member of WATonomous, please select 'None'.</p>
+                                        <select class="form-control">
+                                            <option value="None">None</option>
+                                            <option value="Software Interface Management">Software Interface Management</option>
+                                            <option value="Sensor Fusion">Sensor Fusion</option>
+                                            <option value="Perception">Perception</option>
+                                            <option value="Prediction">Prediction</option>
+                                            <option value="Local Mapping">Local Mapping</option>
+                                            <option value="Global Mapping">Global Mapping</option>
+                                            <option value="Path Planning">Path Planning</option>
+                                            <option value="Simulation">Simulation</option>
+                                            <option value="User Interface">User Interface</option>
+                                            <option value="Embedded Implementation and Controls">Embedded Implementation and Controls</option>
+                                            <option value="Signals Processing and Amplifier Design">Signals Processing and Amplifier Design</option>
+                                            <option value="Vehicle Dynamics">Vehicle Dynamics</option>
+                                            <option value="Sensor Mounting and Cooling">Sensor Mounting and Cooling</option>
+                                            <option value="Internal Affairs">Internal Affairs</option>
+                                            <option value="Marketing">Marketing</option>
+                                            <option value="Finance">Finance</option>
+                                            <option value="Sponsorship">Sponsorship</option>
+                                            <option value="Website">Website</option>
+                                            <option value="Graphic Design">Graphic Design</option>
+                                        </select>
+                                        <br />
+                                        
                                     </Col>
                                 </FormGroup>
 
