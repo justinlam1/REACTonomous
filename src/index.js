@@ -6,6 +6,7 @@ import Index from './Components/Index.jsx';
 import Media from './Components/Media.jsx';
 import Sponsors from './Components/Sponsors.jsx';
 import Contact from './Components/Contact.jsx';
+import Apply from './Components/Apply.jsx';
 
 import registerServiceWorker from './registerServiceWorker';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
@@ -50,6 +51,7 @@ ReactDOM.render(
           <Route exact path = "/media" component = {Media} />
           <Route exact path = "/sponsors" component = {Sponsors} />
           <Route exact path = "/contact" component = {Contact} />
+<Route exact path = "/apply" component = {Apply} />
         </AnimatedSwitch>
 
       </Switch>
